@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Poppins:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: #222;
+  margin-top: 50px;
+  
+
+}
+#container {
+  justify-content: center;
+  justify-items: center;
+  margin: 0 auto;
+  margin: 0 40px 0 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 130px;
+  margin-bottom: 50px;
+}
+#container img {
+  height: 400px;
+  width: 300px;
+  
+}
+#symPrice{
+    display: flex;
+}
+#div2{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.text{
+    text-align: center;
+    margin-top: 150px;
+    text-decoration: underline;
+    letter-spacing: 7px;
+    color: rgb(61, 61, 61);
+}
+#removeBtn{
+  padding: 5px 20px 5px 20px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+  letter-spacing: 5px;
+}

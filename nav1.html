@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'></script>
+  <link rel="shortcut icon" href="./icons/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+  * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: #222;
+}
+.flex {
+  display: flex;
+}
+ #salebox{
+  height:40px;
+  width:100%;
+  border:1px solid rgb(255,45,68);
+  background-color: rgb(255,45,68);
+  color:white;
+  text-decoration-line: underline; 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+} 
+
+/* ************************************************************************************************************************ */
+/* -----navigation-bar CSS----- */
+/* ************************************************************************************************************************ */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.nav {
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+}
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  transition: all 0.3s ease-in-out;
+}
+h1 .logo a {
+  font-size: 15px;
+  font-weight: 700;
+}
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+.leftmenu a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.3s ease-in-out;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+.rightmenu a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.3s ease-in-out;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+.logo a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.3s ease-in-out;
+  font-size: 38px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif !important;
+}
+.nav a:hover {
+  background-color: rgb(249, 249, 249);
+  cursor: pointer;
+}
+.search-bar {
+  justify-content: space-between;
+  padding: 10px 100px 10px 100px;
+  letter-spacing: 2px;
+}
+.search-bar input {
+  height: 33px;
+  width: 260px;
+  align-items: center;
+  letter-spacing: 2px;
+}
+.search-bar-section {
+  height: 40px;
+  width: 300px;
+  border-radius: 6px;
+  border: 2px solid rgb(180, 180, 180);
+}
+.icon {
+  text-align: center;
+  margin: auto;
+  margin-left: 5px;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+#search {
+  border: none;
+  place-content: none;
+}
+#container{
+        height:600px;
+        width:80%;
+        margin:auto;
+       
+        display:flex;
+        margin-top:200px;
+
+    }
+    #container div{
+        height:600px;
+        width:50%;
+        margin:auto;
+        /* border:1px solid black; */
+
+    }
+    #container img{
+      width: 99%;
+    }
+    #container h1{
+      font-style: sans-serif;
+      font-size: 68px;
+      padding-top: 200px;
+      display: flex;
+      justify-content: center;
+      padding-left: 10px;
+    }
+    line{
+      line-height:20px;
+    }
+    h3{
+        color:grey;
+        text-align: center;
+        line-height:20px ;
+        padding-left: 35px;
+        padding-right: 35px;
+     }
+    /* p{
+      font-size: 25px;
+      /* padding-left: 20px; */
+      /* padding-right: 20px; */
+      /* color:grey; */
+      h2{
+        font-size: 50px;
+        text-align: center;
+        /* padding-top: 30px; */
+     }
+     button{
+      height: 40px;
+       width:100px;
+       display:flex;
+       margin:auto;
+       justify-content: center;
+       align-items: center;
+       margin-top:30px;
+     }
+     #boxbtn{
+       
+        display:flex;
+        margin:auto;
+        margin-top:20px
+     } 
+     #boxbtn p{
+        padding:25px 25px;
+        padding-left: 150px;
+        padding-right: 900px;
+        font-size: larger;
+     }
+
+     #bbtn{
+       height: 40px;
+       width:100px;
+       display:flex;
+       margin:auto;
+       justify-content: center;
+       align-items: center;
+       margin-top: 13px;
+       border-radius: 10px;
+       font-size: medium;
+       background-color:rgb(255,255,255);
+       }
+
+       #imgdiv{
+        /* border:1px solid blue; */
+        height:480px;
+        width:80%;
+        display:flex;
+        margin:auto;
+       }
+
+       #imgdiv div{
+        /* border:1px solid yellow; */
+        height:480px;
+        width:21%;
+        margin: auto;
+       }
+       #imgdiv>div>img{
+        width:100%;
+        padding-bottom: 25px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+       }
+
+       #bcon{
+        width:80%;
+        height:700px;
+        /* border:1px solid black; */
+        margin:auto;
+        display:flex;
+       }
+       #bcon div{
+        width:48%;
+        height:700px;
+        /* border:1px solid black; */
+        margin:auto;
+       }
+       #bcon div img{
+        width:99%;
+       }
+
+       #img2div{
+        /* border:1px solid blue; */
+        height:480px;
+        width:80%;
+        display:flex;
+        margin:auto;
+       }
+
+       #img2div div{
+        /* border:1px solid yellow; */
+        height:480px;
+        width:21%;
+        margin: auto;
+       }
+       #img2div>div>img{
+        width:100%;
+        padding-bottom: 25px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+       }
+       #ss{
+        text-align: center;
+       }
+       #sscon{
+        height:650px;
+        width:80%;
+        /* border:1px solid blue; */
+        display: flex;
+        margin:auto;
+        margin-top:20px;
+       }
+       #sscon >div{
+        height:650px;
+        width:45%;
+        /* border:1px solid red; */
+        margin:auto;
+       }
+       #sscon>div>img{
+        width:95%;
+        align-items: center;
+       }
+</style>
+<body>
+  <h2>Hello</h2>
+</body>
+</html>
+function navBar(){
+    return `<nav class="nav">
+      <div id="salebox"><p>Sale | 10,000 items at 60% off | Shop Now</p></div>
+    <div class="container flex">
+      <!--menus like- women,men & kids(nav-bar)-->
+      <ul class="leftmenu flex">
+        <li><a href="C:\Users\samru\OneDrive\Documents\Pictures\Desktop\P\kindhearted-afternoon-7542\men page\men.html">Men</a></li>
+        <li><a href="/women/women.html">Women</a></li>
+        <li><a href="#">Kids</a></li>
+      </ul>
+      <!--website name / home button (nav-bar)-->
+      <h1 class="logo"><a href="../index.html">FARFETCH</a></h1>
+      <!--icons button like- country,profile,wishlist and cart (nav-bar)-->
+      <ul class="rightmenu flex">
+        <li>
+          <a href="#"><i class="fas fa-flag"></i></a>
+        </li>
+        <li>
+          <a href="/signUp/signup.html"><i class="far fa-user"></i></a>
+        </li>
+        <li>
+          <a href="/wishlist/wishlist.html"><i class="fa-solid fa-heart"></i></a>
+        </li>
+        <li>
+          <a href="/cart/cart.html"><i class="fas fa-shopping-bag"></i></a>
+        </li>
+      </ul>
+    </div>
+    <!-- search-bar option  -->
+    <div class="flex-bar">
+      <ul class="leftmenu flex">
+        <li><a href="/men/men.html">Sale</a></li>
+        <li><a href="/women/women.html">Insights</a></li>
+        <li><a href="#">Shop By</a></li>
+        <li><a href="">Brands</a></li>
+        <li><a href="">Clothing</a></li>
+        <li><a href="">Shoes</a></li>
+        <li><a href="">Bags</a></li>
+        <li><a href="">Accessories</a></li>
+        <li><a href="">jewelry</a></li>
+        <li><a href="">Pre-Owned</a></li>
+        <li><div class="search-bar-section">
+          <input type="text" placeholder="Search" id="search"/><span class="icon"><i class="fas fa-search"></i></span>
+        </div></li>
+      </ul>
+    
+    </div>
+  </nav>
+  <div id="container">
+    <div>
+      <img src=" https://cdn-static.farfetch-contents.com/cms-cm10/caas/v1/media/3630026/data/5c6fa4bb27224fbb54b540ee10a84b80/1x1_messaging-side/637/data.png" alt="">
+  </div>
+  <div>
+    <h1>10,000 ITEMS,</h1>
+    <h2> NOW AT 60% OFF</h2>
+
+      <h3>The world's greatest selection of designers,boutiques and brands now on </h3>
+
+      <button>Shop Now</button>
+     
+  </div>
+    
+  </div>
+  <div id="boxbtn">
+    <div>
+        <p>Best of sale:shop our editor's picks</p>
+      </div>
+      <div>
+        <Button id="bbtn">Shop now</Button>
+      </div>
+  </div>
+ 
+  <div id="imgdiv">
+    <div>
+        <img src="https://cdn-images.farfetch-contents.com/17/59/04/83/17590483_37399696_600.jpg" alt="">
+        <h4>OFF-White</h4>
+        <p>blow detail slipper</p>
+        <p>$583</p>
+    </div>
+    <div>
+        <img src="https://cdn-images.farfetch-contents.com/17/59/20/68/17592068_36617640_1000.jpg" alt="">
+        <h4>Stella McCartney</h4>
+        <p>Stella logo crossbody bag</p>
+        <p>$1,190</p>
+    </div>
+    <div>
+        
+        <img src="https://cdn-images.farfetch-contents.com/17/72/05/05/17720505_2a208b6d-439b-42a8-90a0-a344f3dfede8_1000.jpg" alt="">
+        <h4>Alexander McQueen</h4>
+        <p>asymmetric button-detail midi skirt</p>
+        <p>$1,065</p>
+    </div>
+    <div>
+        <img src="https://cdn-images.farfetch-contents.com/17/66/89/44/17668944_36993083_600.jpg" alt="">
+        <h4>Alexander McQueen</h4>
+        <p>zip detail crooped trousers</p>
+        <p>$1,013</p>
+    </div>
+  </div>
+
+  <div id="bcon">
+    <div>
+        <img src="https://cdn-static.farfetch-contents.com/cms-cm10/caas/v1/media/3670456/data/c155d53e0c53cd51241840519c5f11f9/1x1_two-columns/637/data.jpeg" alt="">
+       <h4>THE HEAT IS ON: SUMMER IN THE CITY</h4>
+        <p>Life doesn’t stop when the temperature rises, so what are the tricks to staying stylish in the heat? We present the ultimate hot-weather style hacks, including the classic pieces every wardrobe needs and the accessories that will add flair
+        
+        </p>
+    </div>
+    <div>
+        <img src="https://cdn-static.farfetch-contents.com/cms-cm10/caas/v1/media/3670470/data/33a0f816875efd122994944c8bbd4f5e/1x1_messaging-side/637/data.jpeg" alt="">
+    </div>
+  </div>
+
+  <div id="boxbtn">
+    <div>
+        <p>New in:hand-picked daily </p>
+      </div>
+      <div>
+        <Button id="bbtn">Shop now</Button>
+      </div>
+  </div>
+
+  <div id="img2div">
+    <div>
+        <img src="https://cdn-images.farfetch-contents.com/18/71/46/35/18714635_40625321_600.jpg" alt="">
+        <h4>OFF-White</h4>
+        <p>blow detail slipper</p>
+        <p>$583</p>
+    </div>
+    <div>
+        <img src="https://cdn-images.farfetch-contents.com/18/41/41/22/18414122_40496067_600.jpg" alt="">
+        <h4>Stella McCartney</h4>
+        <p>Stella logo crossbody bag</p>
+        <p>$1,190</p>
+    </div>
+    <div>
+        
+        <img src="https://cdn-images.farfetch-contents.com/18/45/36/81/18453681_40628336_600.jpg" alt="">
+        <h4>Alexander McQueen</h4>
+        <p>asymmetric button-detail midi skirt</p>
+        <p>$1,065</p>
+    </div>
+    <div>
+        <img src="https://cdn-images.farfetch-contents.com/17/91/80/79/17918079_40634111_600.jpg "alt="">
+        <h4>Alexander McQueen</h4>
+        <p>zip detail crooped trousers</p>
+        <p>$1,013</p>
+    </div>
+  </div>
+  <h1 id="ss">This weeks Highlight</h1>
+  <div id="sscon">
+    <div>
+     <img src="https://cdn-static.farfetch-contents.com/cms-cm10/caas/v1/media/3670494/data/ee6d4d3e3624db40da45aabb5f5774a0/3x4_three-columns/480/data.jpeg" alt=""/> 
+     <h4>ETRO</h4>
+     <p>Sorbet shades served up by Versace and more</p>
+    </div>
+    <div>
+     <img src="https://cdn-static.farfetch-contents.com/cms-cm10/caas/v1/media/3670486/data/977f0b14024756386fddc76ba15a3e47/3x4_three-columns/480/data.jpeg"/>
+      <h4>PASTEL PIEDES</h4>
+      <p>Meet your new perfect trench</p>
+    </div>
+    <div>
+      <img src="https://cdn-static.farfetch-contents.com/cms-cm10/caas/v1/media/3670486/data/977f0b14024756386fddc76ba15a3e47/3x4_three-columns/480/data.jpeg"/>
+      <h4>PASTEL PIEDES</h4>
+      <p>Meet your new perfect trench</p>
+      </div>
+  </div>
+
+  <div id="boxbtn">
+    <div>
+        <p>Trending now:Season's best shorts </p>
+      </div>
+      <div>
+        <Button id="bbtn">Shop now</Button>
+      </div>
+  </div>
+
+  <div id="img2div">
+    <div>
+        <img src="https://cdn-images.farfetch-contents.com/17/91/52/82/17915282_40441252_600.jpg" alt="">
+        <h4>OFF-White</h4>
+        <p>blow detail slipper</p>
+        <p>$583</p>
+    </div>
+    <div>
+        <img src="https://cdn-images.farfetch-contents.com/18/32/32/12/18323212_40055882_600.jpg" alt="">
+        <h4>Stella McCartney</h4>
+        <p>Stella logo crossbody bag</p>
+        <p>$1,190</p>
+    </div>
+    <div>
+        
+        <img src="https://cdn-images.farfetch-contents.com/17/50/57/41/17505741_36312201_600.jpg" alt="">
+        <h4>Alexander McQueen</h4>
+        <p>asymmetric button-detail midi skirt</p>
+        <p>$1,065</p>
+    </div>
+    <div>
+        <img src="https://cdn-images.farfetch-contents.com/17/94/14/77/17941477_39860244_600.jpg "alt="">
+        <h4>Alexander McQueen</h4>
+        <p>zip detail crooped trousers</p>
+        <p>$1,013</p>
+    </div>
+  </div>
+  
+  <h1 id="ss">Shop the world's best BOUTIQUE</h1>
+  <div id="sscon">
+    <div>
+     <img src="https://cdn-static.farfetch-contents.com/cms-cm10/caas/v1/media/3670498/data/2d598fad064433d2bc95f02c2b0382a2/3x4_three-columns/480/data.jpeg" alt=""/> 
+     <h4>ETRO</h4>
+     <p>Sorbet shades served up by Versace and more</p>
+    </div>
+    <div>
+     <img src="https://cdn-static.farfetch-contents.com/cms-cm10/caas/v1/media/3670446/data/89dde65e91669960d7adcaa9fb0dfc6b/3x4_three-columns/480/data.jpeg"/>
+      <h4>PASTEL PIEDES</h4>
+      <p>Meet your new perfect trench</p>
+    </div>
+    <div>
+      <img src="https://cdn-static.farfetch-contents.com/cms-cm10/caas/v1/media/3670472/data/521006027cb80ee06fca5a3d0d264103/3x4_three-columns/480/data.jpeg"/>
+      <h4>PASTEL PIEDES</h4>
+      <p>Meet your new perfect trench</p>
+      </div>
+  </div>
+</section>
+  </nav>`

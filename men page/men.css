@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Poppins:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: #222;
+  margin-top: 50px;
+  
+
+}
+#container {
+  justify-content: center;
+  justify-items: center;
+  margin: 0 auto;
+  margin: 0 40px 0 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 50px;
+}
+#container img {
+  height: 400px;
+  width: 300px;
+  
+}
+#symPrice{
+    display: flex;
+}
+#div2{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#btnDiv{
+    display: flex;
+    justify-content: space-between;
+}
+#btnDiv button{
+    color: black;
+    background-color: white;
+    padding: 2px 5px;
+}
+#btnDiv button:hover{
+    background-color: rgb(242, 242, 242);
+    color: black;
+    cursor: pointer;
+}
+#direction{
+  display: flex;
+  justify-content: center;
+  color: rgb(170, 170, 170);
+}
+#BodyContainer{
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+#sortFilter{
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-around;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../home/home.css" />
+    <script
+      src="https://kit.fontawesome.com/498dbb26da.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="men.css" />
+    <title>Men-Page</title>
+  </head>
+  <body>
+
+    <!-- importing nav bar  -->
+    <div id="nab"></div>
+
+    <!-- main container for mens product page content  -->
+    <div id="BodyContainer">
+      <div id="direction">
+        <p>Home</p>
+        <i class="fas fa-arrow-right"></i>
+        <p>Men</p>
+        <i class="fas fa-arrow-right"></i>
+        <p>Clothing</p>
+      </div>
+      <br />
+      <h1>MEN'S DESIGNER CLOTHING</h1>
+    </div>
+
+    <!-- sorting and filter select html  -->
+    <div id="sortFilter">
+      <select name="" id="priceSort" onchange="handlePriceSort()">
+        <option value="">Price Sort</option>
+        <option value="high">High-To-Low</option>
+        <option value="low">Low-To-High</option>
+      </select>
+
+      <!-- filter by brand name  -->
+      <select name="" id="brandFilter" onchange="filterBrand()">
+        <option value="">Select Brand</option>
+        <option value="PALM ANGLE">Palm Angel</option>
+        <option value="HERON PRESTON">Heron Preston</option>
+        <option value="WALES BONNER">Wales Bonner</option>
+        <option value="REEBOK">Reebok</option>
+        <option value="BALENCIAGA">Balenciaga</option>
+        <option value="OFF WHITE">Off-White</option>
+        <option value="MAD PARIS">Mad Paris</option>
+        <option value="GUCCI">Gucci</option>
+      </select>
+
+      <!-- filter by category  -->
+      <select name="" id="CategoryFilter" onchange="filterCategory()">
+        <option value="">Select Category</option>
+        <option value="JACKET">Jacket</option>
+        <option value="T-SHIRT">T-Shirt</option>
+        <option value="PANT">Pant</option>
+        <option value="SHIRT">Shirt</option>
+        <option value="SHOES">Shoes</option>
+        <option value="BAG">Bag</option>
+        <option value="WATCH">Watch</option>
+        <option value="SUNGLASSES">Sunglasses</option>
+      </select>
+    </div>
+
+
+
+
+
+    <div id="container"></div>
+
+    <!-- importing getoff form  -->
+    <div id="getOff"></div>
+
+    <!-- importing footer  -->
+    <div id="foot"></div>
+  </body>
+  <script src="men.js"></script>
+</html>
+<script type="module" src="../js/navBarIteam.js"></script>
+<script type="module" src="../js/footerIteam.js"></script>
+<script type="module" src="../js/signFormIteam.js"></script>

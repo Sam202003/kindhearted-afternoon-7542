@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Poppins:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: #222;
+}
+nav {
+  display: flex;
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+  transition: all 0.3s ease-in-out;
+}
+#container {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  padding: 55px 55px;
+  width: 100%;
+  text-align: center;
+}
+#container > p {
+  font-size: 25px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+#cardDetails {
+  display: inline-table;
+  text-align: center;
+  padding: 15px 15px;
+  margin: auto;
+  width: 400px;
+  font-size: 20px;
+  line-height: 30px;
+}
+#form {
+  text-align: start;
+}
+#form input {
+  width: 100%;
+  padding: 10px 10px;
+}
+#pay {
+  margin-top: 20px;
+  cursor: pointer;
+  padding: 10px 20px 10px 20px;
+  background-color: black;
+  color: white;
+}
