@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Poppins:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+#signUpContainer {
+  border: 1px solid rgb(235, 235, 235);
+  border-radius: 10px;
+  padding: 30px;
+  width: 450px;
+  line-height: 28px;
+  
+}
+#signUpContainer button {
+  width: 100%;
+  padding: 15px 15px;
+  margin-bottom: 8px;
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  border-radius: 7px;
+}
+a {
+    text-decoration: none;
+    color: black;
+  }
+  .underline {
+    text-decoration: underline;
+  }
+  #register{
+      background-color: black;
+      color: white;
+      width: 100%;
+    padding: 15px 15px;
+    border-radius: 7px;
+    font-size: 20px;
+  }
+  form input {
+    width: 100%;
+    padding: 15px 15px;
+    border-radius: 7px;
+  }
