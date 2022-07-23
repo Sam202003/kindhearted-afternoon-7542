@@ -285,6 +285,64 @@ h1 .logo a {
         width:95%;
         align-items: center;
        }
+
+       #threeCard {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 70px;
+  border: 1px solid red transparent;
+  width: 100%;
+  padding: 15px 47px 25px 47px;
+}
+#threeCard > div {
+  border: 1px solid rgb(240, 240, 240);
+  width: 30%;
+  height: 110px;
+  margin-left: 10px;
+  padding: 12px 0px 0px 10px;
+}
+#threeCard > div:hover {
+  background-color: rgb(236, 236, 236);
+}
+#threeCard > div > div {
+  font-size: 20px;
+  font-weight: bold;
+}
+#threeCard > div > p {
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+#footerContainer {
+  width: 100%;
+  padding-bottom: 20px;
+  background-color: #222222;
+  color: white;
+  padding: 15px 47px 25px 47px;
+  line-height: 35px;
+  letter-spacing: 2px;
+}
+#footerContainer a {
+  color: white;
+  text-decoration: none;
+}
+#footerContainer > div {
+  justify-content: space-around;
+}
+.customerAndabout {
+  width: 500px;
+  justify-content: space-around;
+}
+.copyRight {
+  margin-top: 3px;
+  padding: 15px 47px 25px 47px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+.socialMediaIcons > a {
+  letter-spacing: 30px;
+  font-size: 29px;
+}
 </style>
 <body>
   <h2>Hello</h2>
@@ -296,41 +354,41 @@ function navBar(){
     <div class="container flex">
       <!--menus like- women,men & kids(nav-bar)-->
       <ul class="leftmenu flex">
-        <li><a href="C:\Users\samru\OneDrive\Documents\Pictures\Desktop\P\kindhearted-afternoon-7542\men page\men.html">Men</a></li>
-        <li><a href="/women/women.html">Women</a></li>
+        <li><a href="men.html">Men</a></li>
+        <li><a href="women.html">Women</a></li>
         <li><a href="#">Kids</a></li>
       </ul>
       <!--website name / home button (nav-bar)-->
-      <h1 class="logo"><a href="../index.html">FARFETCH</a></h1>
+      <h1 class="logo"><a href="nav1.html">FARFETCH</a></h1>
       <!--icons button like- country,profile,wishlist and cart (nav-bar)-->
       <ul class="rightmenu flex">
         <li>
           <a href="#"><i class="fas fa-flag"></i></a>
         </li>
         <li>
-          <a href="/signUp/signup.html"><i class="far fa-user"></i></a>
+          <a href="signup.html"><i class="far fa-user"></i></a>
         </li>
         <li>
-          <a href="/wishlist/wishlist.html"><i class="fa-solid fa-heart"></i></a>
+          <a href="wishlist.html"><i class="fa-solid fa-heart"></i></a>
         </li>
         <li>
-          <a href="/cart/cart.html"><i class="fas fa-shopping-bag"></i></a>
+          <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
         </li>
       </ul>
     </div>
     <!-- search-bar option  -->
     <div class="flex-bar">
       <ul class="leftmenu flex">
-        <li><a href="/men/men.html">Sale</a></li>
-        <li><a href="/women/women.html">Insights</a></li>
+        <li><a href="sale.html">Sale</a></li>
+        <li><a href="insights.html">Insights</a></li>
         <li><a href="#">Shop By</a></li>
-        <li><a href="">Brands</a></li>
-        <li><a href="">Clothing</a></li>
-        <li><a href="">Shoes</a></li>
-        <li><a href="">Bags</a></li>
-        <li><a href="">Accessories</a></li>
-        <li><a href="">jewelry</a></li>
-        <li><a href="">Pre-Owned</a></li>
+        <li><a href="#">Brands</a></li>
+        <li><a href="#">Clothing</a></li>
+        <li><a href="#">Shoes</a></li>
+        <li><a href="#">Bags</a></li>
+        <li><a href="#">Accessories</a></li>
+        <li><a href="#">jewelry</a></li>
+        <li><a href="#">Pre-Owned</a></li>
         <li><div class="search-bar-section">
           <input type="text" placeholder="Search" id="search"/><span class="icon"><i class="fas fa-search"></i></span>
         </div></li>
@@ -452,7 +510,7 @@ function navBar(){
       <p>Meet your new perfect trench</p>
     </div>
     <div>
-      <img src="https://cdn-static.farfetch-contents.com/cms-cm10/caas/v1/media/3670486/data/977f0b14024756386fddc76ba15a3e47/3x4_three-columns/480/data.jpeg"/>
+      <img src="https://cdn-static.farfetch-contents.com/cms-cm10/caas/v1/media/3670516/data/ebb503a976dad300f9a94b6883aaad73/3x4_three-columns/480/data.jpeg"/>
       <h4>PASTEL PIEDES</h4>
       <p>Meet your new perfect trench</p>
       </div>
@@ -488,7 +546,7 @@ function navBar(){
         <p>$1,065</p>
     </div>
     <div>
-        <img src="https://cdn-images.farfetch-contents.com/17/94/14/77/17941477_39860244_600.jpg "alt="">
+        <img src="https://cdn-images.farfetch-contents.com/17/94/14/77/17941477_39860244_600.jpg"alt="">
         <h4>Alexander McQueen</h4>
         <p>zip detail crooped trousers</p>
         <p>$1,013</p>
@@ -513,5 +571,97 @@ function navBar(){
       <p>Meet your new perfect trench</p>
       </div>
   </div>
-</section>
-  </nav>`
+
+  <div id="threeCard">
+    <div>
+      <div><i class="fas fa-store-alt"></i></div>
+      <p>How to shop</p>
+      <p>Your Guide to shopping and placing order</p>
+    </div>
+    <div>
+      <div><i class="fas fa-question-circle"></i></div>
+      <p>FAQS</p>
+      <p>Your Questions Answered</p>
+    </div>
+    <div>
+      <div><i class="far fa-comment-alt"></i></div>
+      <p>NEED HELP?</p>
+      <p>Contact Our Global Customer Service Team</p>
+    </div>
+    </div>
+
+    <div id="footerContainer">
+      <div class="flex">
+        <div>
+          <div><p>FARFETCH APP</p></div>
+          <div>
+            <a href="https://www.farfetch.com/in/discover-app/"
+              >Farfetch App for IOS and Android</a
+            >
+          </div>
+        </div>
+        <div>
+          <div><p>DESTINATION/REGION, CURRENCY AND LANGUAGE</p></div>
+          <div><p>India, USD $</p></div>
+          <br>
+          <div>FOLLOW US</div>
+          <br>
+          <div class="socialMediaIcons">
+            <a href="https://www.instagram.com/farfetch/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://www.facebook.com/Farfetch/"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://twitter.com/farfetch"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="https://www.snapchat.com/add/farfetch.com"
+              ><i class="fab fa-snapchat"></i
+            ></a>
+            <a href="https://www.youtube.com/user/farfetchdotcom"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+        <div class="flex customerAndabout">
+          <div>
+            <p>CUSTOMER SERVICE</p>
+            <p>Help & contact us</p>
+            <p>Orders & shipping</p>
+            <p>Payment & pricing</p>
+            <p>Returns & refunds</p>
+            <p>FAQs</p>
+            <p>Terms & conditions</p>
+            <p>Privacy policy</p>
+            <p>Accessibility</p>
+          </div>
+          <div>
+            <p>ABOUT FARFETCH</p>
+            <p>About Us</p>
+            <p>Investors</p>
+            <p>Boutique Partners</p>
+            <p>Affiliate Programme</p>
+            <p>
+              Student discount <br />
+              UNiDAYS
+            </p>
+            <p>Careers</p>
+            <p>Customer Promise</p>
+            <p>FARFETCH App</p>
+            <p>Sitemap</p>
+            <p>Positively FARFETCH</p>
+          </div>
+        </div>
+      </div>
+      <div class="copyRight">
+        <p>
+          FARFETCH' and the 'FARFETCH' logo are trade marks of FARFETCH UK
+          Limited and are registered in numerous jurisdictions around the
+          world. <br />
+          © Copyright 2022 FARFETCH UK Limited. All rights reserved.
+        </p>
+      </div>
+    </div>
+<!-- </section>
+  </nav>` -->

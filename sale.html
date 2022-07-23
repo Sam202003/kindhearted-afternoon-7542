@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <div id="fonts"></div>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALE</title>
+   
+    <link rel="stylesheet" href="optionsStyle.css">
+    <link rel="stylesheet" href="sidebar.css">
+</head>
+<body>
+    <div id="saleLine">
+        <a href="/">Sale</a>
+        <a href="/">Up to 50% off</a>
+        <a href="/">Shop the world's best designers</a>
+        </div>
+    <div id="header" style="position : sticky; top : 0px;">
+    </div>
+    
+    <h2 style="text-align: center;font-size: 20px;">Womens Home > Sale</h2>
+    <h1 style="text-align: center;font-size: 30px; margin-top: 10px;">SALE</h1>
+    <nav class="side">
+        <ul>
+         <li><a href="#" class="one">Catagories
+             <span>
+                 <img src="../down.png"/>
+             </span>
+         </a>
+             <ul class="one-one">
+                 <li><a href="#">Clothings</a></li>
+                 <li><a href="#">Bags</a></li>
+                 <li><a href="#">Accessories</a></li>
+                 <li><a href="#">Shoes</a></li>
+                 <li><a href="#">Jewelry</a></li>
+                 <li><a href="#">Pre-Owned</a></li>
+                 
+             </ul>
+         </li>
+         <li><a href="#" class="two">Brands
+            <span>
+                <img src="../down.png"/>
+            </span>
+         </a>   
+         </li>
+         <li><a href="#" class="two">Colors
+            <span>
+                <img src="../down.png"/>
+            </span>
+         </a>   
+         </li>
+         <li><a href="#" class="two">Price
+            <span>
+                <img src="../down.png"/>
+            </span>
+         </a>   
+         </li>
+        </ul>
+     </nav>
+
+    <select id="sort">
+        <option>Sort By </option>
+        <option value="OP">Our Pics</option>
+        <option value="NF">Newest first</option>
+        <option value="HTL">Price: high to low</option>
+        <option value="LTH">Price: low to high</option>
+        <option value="DHTL">Discount: high to low</option>
+    </select>
+    
+    <div id="container">
+
+    </div>
+</body>
+</html>
+
+<script type="module">
+    import { header,fonts } from '../components/header.js'
+    import { append } from '../components/append.js'
+let head = document.getElementById('header')
+head.innerHTML = header();
+let font = document.getElementById('fonts')
+font.innerHTML = fonts();
+
+let products = JSON.parse(localStorage.getItem('products'))
+console.log(products)
+
+
+products =  products.filter((el)=>{
+    if(el.type == 'sale'){
+        return el
+    }
+})
+console.log(products)
+
+let container = document.getElementById('container')
+append(products,container)
+
+</script>
+
