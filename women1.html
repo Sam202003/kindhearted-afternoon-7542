@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Women updated</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<style>
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: #222;
+  margin-top: 50px;
+  
+
+}
+#container {
+  justify-content: center;
+  justify-items: center;
+  margin: 0 auto;
+  margin: 0 40px 0 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 50px;
+}
+#container img {
+  height: 400px;
+  width: 300px;
+  
+}
+#symPrice{
+    display: flex;
+}
+#div2{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#btnDiv{
+    display: flex;
+    justify-content: space-between;
+}
+#btnDiv button{
+    color: black;
+    background-color: white;
+    padding: 2px 5px;
+}
+#btnDiv button:hover{
+    background-color: rgb(242, 242, 242);
+    color: black;
+    cursor: pointer;
+}
+#direction{
+  display: flex;
+  justify-content: center;
+  color: rgb(170, 170, 170);
+}
+#BodyContainer{
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+#sortFilter{
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+</style>
+<body>
+    <div id="nab"></div>
+
+    <!-- main container for mens product page content  -->
+    <div id="BodyContainer">
+      <div id="direction">
+        <p>Home</p>
+        <i class="fas fa-arrow-right"></i>
+        <p>Women</p>
+        <i class="fas fa-arrow-right"></i>
+        <p>Clothing</p>
+      </div>
+      <br />
+      <h1>WOMEN'S DESIGNER CLOTHING</h1>
+    </div>
+
+    <!-- sorting and filter select html  -->
+    <div id="sortFilter">
+      <select name="" id="priceSort" onchange="handlePriceSort()">
+        <option value="">Price Sort</option>
+        <option value="high">High-To-Low</option>
+        <option value="low">Low-To-High</option>
+      </select>
+
+      <!-- filter by brand name  -->
+      <select name="" id="brandFilter" onchange="filterBrand()">
+        <option value="">Select Brand</option>
+        <option value="PALM ANGLE">Palm Angel</option>
+        <option value="HERON PRESTON">Heron Preston</option>
+        <option value="WALES BONNER">Wales Bonner</option>
+        <option value="REEBOK">Reebok</option>
+        <option value="BALENCIAGA">Balenciaga</option>
+        <option value="OFF WHITE">Off-White</option>
+        <option value="MAD PARIS">Mad Paris</option>
+        <option value="GUCCI">Gucci</option>
+      </select>
+
+      <!-- filter by category  -->
+      <select name="" id="CategoryFilter" onchange="filterCategory()">
+        <option value="">Select Category</option>
+        <option value="JACKET">Jacket</option>
+        <option value="T-SHIRT">T-Shirt</option>
+        <option value="PANT">Pant</option>
+        <option value="SHIRT">Shirt</option>
+        <option value="SHOES">Shoes</option>
+        <option value="BAG">Bag</option>
+        <option value="WATCH">Watch</option>
+        <option value="SUNGLASSES">Sunglasses</option>
+      </select>
+    </div>
+
+
+
+
+
+    <div id="container"></div>
+
+    <!-- importing getoff form  -->
+    <div id="getOff"></div>
+
+    <!-- importing footer  -->
+    <div id="foot"></div>
+
+</body>
+</html>
+<script>
+    let womensData=JSON.parse(localstorage.getItem("womensData"));
+
+    let cartArr=JSON.parse(localStorage.getItem("cartItem")) || [];
+
+    let wishArr=JSON.parse(localStorage.getItem("WishItem")) || [];
+
+    displayData(womensData);
+
+    let womensData=[
+        {
+            image_url:"https://cdn-images.farfetch-contents.com/18/11/65/02/18116502_38510708_600.jpg",
+            name:"Doice",
+            brand:"Doice and Gabana",
+            category:"Jacket",
+            Symbol:"$",
+            price:789,
+            strikeoffprice:999,
+        },
+        {
+            image_url:"https://cdn-images.farfetch-contents.com/18/11/65/02/18116502_38510708_600.jpg",
+            name:"Doice",
+            brand:"Doice and Gabana",
+            category:"Jacket",
+            Symbol:"$",
+            price:789,
+            strikeoffprice:999,
+        },
+        {
+            image_url:"https://cdn-images.farfetch-contents.com/18/11/65/02/18116502_38510708_600.jpg",
+            name:"Doice",
+            brand:"Doice and Gabana",
+            category:"Jacket",
+            Symbol:"$",
+            price:789,
+            strikeoffprice:999,
+        },
+        {
+            image_url:"https://cdn-images.farfetch-contents.com/18/11/65/02/18116502_38510708_600.jpg",
+            name:"Doice",
+            brand:"Doice and Gabana",
+            category:"Jacket",
+            Symbol:"$",
+            price:789,
+            strikeoffprice:999,
+        }
+    ];
+    localStorage.setItem("womensData",JSON.stringify(womensData));
+
+    function display(womensData){
+        document.querySelector("#container").innerHTML="";
+        womensData.map(function(data){
+            let div=document.createElement("div");
+
+            let image=document.createElement("img");
+            image.setAttribute("src",data.image_url);
+
+            //brand-name -->
+  var brand = document.createElement("p");
+  brand.textContent = data.brand;
+
+  // name -->
+  var name = document.createElement("p");
+  name.textContent = data.name;
+
+  //creating a div - contain symPrice & strikedoffprice -->
+  var div2 = document.createElement("div");
+  div2.setAttribute("id", "div2");
+  //creating a small symbol price div which contain rupee symbol and price of product-->
+  var symPrice = document.createElement("div");
+  symPrice.setAttribute("id", "symPrice");
+
+  var symbol = document.createElement("p");
+  symbol.textContent = data.Symbol;
+
+  var price = document.createElement("p");
+  price.textContent = data.price;
+
+  symPrice.append(symbol, price);
+
+  var strikPri = document.createElement("p");
+  strikPri.textContent = data.strikedoffprice;
+  strikPri.style.textDecoration = "line-through";
+  strikPri.style.color = "grey";
+
+
+  div2.append(symPrice, strikPri);
+
+  //   created a div for "add to cart button" && "wishlist button" -->
+  var btnDiv = document.createElement("div");
+  btnDiv.setAttribute("id" , "btnDiv");
+
+  var addBtn = document.createElement("button");
+  addBtn.textContent = "Add To Cart";
+  addBtn.addEventListener("click" , function(){
+    addToCart(data)
+  })
+
+  var wishBtn = document.createElement("button");
+  wishBtn.textContent = "Wishlist";
+  wishBtn.addEventListener("click" , function(){
+    wishlist(data)
+  })
+
+  btnDiv.append(addBtn,wishBtn);
+
+  //appending-->
+  div.append(image, brand, name, div2,btnDiv);
+
+  document.querySelector("#container").append(div);
+});
+}
+
+
+
+
+//function for addtocart button-->
+function addToCart(data) {
+    console.log(data);
+    cartArr.push(data);
+    localStorage.setItem("cartItem", JSON.stringify(cartArr));
+  }
+
+
+
+  // function for wishlist button-->
+  function wishlist(data) {
+    console.log(data);
+    wishArr.push(data);
+    localStorage.setItem("wishItem", JSON.stringify(wishArr));
+  }
+
+
+
+//sorting to handle price -->
+
+function handlePriceSort(){
+  var selected = document.querySelector("#priceSort").value;
+  // console.log(selected);
+  if (selected == "high"){
+    //descending price 
+    mensData.sort(function(a,b){
+      return b.price - a.price;
+    })
+  }
+  if(selected == "low"){
+    //ascending
+    mensData.sort(function(a,b){
+      return a.price - b.price;
+    })
+
+  }
+  console.log(mensData);
+  displayData(mensData);
+}
+  
+
+
+//filter by Brand Name -->
+
+function filterBrand(){
+  var selected = document.querySelector("#brandFilter").value
+  console.log(selected);
+
+  var filteredList = mensData.filter(function(elem){
+    return elem.brand ==selected;
+  });
+
+  console.log(filteredList);
+  displayData(filteredList);
+}
+
+
+//filter by Category-->
+function filterCategory(){
+  var selected = document.querySelector("#CategoryFilter").value
+  console.log(selected);
+
+  var filteredList = mensData.filter(function(elem){
+    return elem.category == selected;
+  });
+
+  console.log(filteredList);
+  displayData(filteredList);
+
+}
+
+    
+    
+
+</script>
