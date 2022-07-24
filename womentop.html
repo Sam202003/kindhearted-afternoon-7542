@@ -1,0 +1,558 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Womentops</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='woment.js'></script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'></script>
+   <link rel="shortcut icon" href="./icons/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+ <style>
+     * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: #222;
+}
+.flex {
+  display: flex;
+}
+ #salebox{
+  height:40px;
+  width:100%;
+  border:1px solid rgb(255,45,68);
+  background-color: rgb(255,45,68);
+  color:white;
+  text-decoration-line: underline; 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+} 
+
+/* ************************************************************************************************************************ */
+/* -----navigation-bar CSS----- */
+/* ************************************************************************************************************************ */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.nav {
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+}
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  transition: all 0.3s ease-in-out;
+}
+h1 .logo a {
+  font-size: 15px;
+  font-weight: 700;
+}
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+.leftmenu a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.3s ease-in-out;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+.rightmenu a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.3s ease-in-out;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+.logo a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.3s ease-in-out;
+  font-size: 38px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif !important;
+}
+.nav a:hover {
+  background-color: rgb(249, 249, 249);
+  cursor: pointer;
+}
+.search-bar {
+  justify-content: space-between;
+  padding: 10px 100px 10px 100px;
+  letter-spacing: 2px;
+}
+.search-bar input {
+  height: 33px;
+  width: 260px;
+  align-items: center;
+  letter-spacing: 2px;
+}
+.search-bar-section {
+  height: 40px;
+  width: 300px;
+  border-radius: 6px;
+  border: 2px solid rgb(180, 180, 180);
+}
+.icon {
+  text-align: center;
+  margin: auto;
+  margin-left: 5px;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+#search {
+  border: none;
+  place-content: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: #222;
+  margin-top: 50px;
+  
+
+}
+#container {
+  justify-content: center;
+  justify-items: center;
+  margin: 0 auto;
+  margin: 0 40px 0 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 50px;
+}
+#container img {
+  height: 400px;
+  width: 300px;
+  
+}
+#symPrice{
+    display: flex;
+}
+#div2{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#btnDiv{
+    display: flex;
+    justify-content: space-between;
+}
+#btnDiv button{
+    color: black;
+    background-color: white;
+    padding: 2px 5px;
+}
+#btnDiv button:hover{
+    background-color: rgb(242, 242, 242);
+    color: black;
+    cursor: pointer;
+}
+#direction{
+  display: flex;
+  justify-content: center;
+  color: rgb(170, 170, 170);
+}
+#BodyContainer{
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+#sortFilter{
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#footerContainer {
+  width: 100%;
+  padding-bottom: 20px;
+  background-color: #222222;
+  color: white;
+  padding: 15px 47px 25px 47px;
+  line-height: 35px;
+  letter-spacing: 2px;
+}
+#footerContainer a {
+  color: white;
+  text-decoration: none;
+}
+#footerContainer > div {
+  justify-content: space-around;
+}
+.customerAndabout {
+  width: 500px;
+  justify-content: space-around;
+}
+.copyRight {
+  margin-top: 3px;
+  padding: 15px 47px 25px 47px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+.socialMediaIcons > a {
+  letter-spacing: 30px;
+  font-size: 29px;
+}
+ </style>
+ <body>
+    function navBar(){
+        return `<nav class="nav">
+          <div id="salebox"><p>Sale | 10,000 items at 60% off | Shop Now</p></div>
+        <div class="container flex">
+          <!--menus like- women,men & kids(nav-bar)-->
+          <ul class="leftmenu flex">
+            <li><a href="men1.html">Men</a></li>
+            <li><a href="women.html">Women</a></li>
+            <li><a href="#">Kids</a></li>
+          </ul>
+          <!--website name / home button (nav-bar)-->
+          <h1 class="logo"><a href="nav1.html">FARFETCH</a></h1>
+          <!--icons button like- country,profile,wishlist and cart (nav-bar)-->
+          <ul class="rightmenu flex">
+            <li>
+              <a href="#"><i class="fas fa-flag"></i></a>
+            </li>
+            <li>
+              <a href="signup.html"><i class="far fa-user"></i></a>
+            </li>
+            <li>
+              <a href="wishlist.html"><i class="fa-solid fa-heart"></i></a>
+            </li>
+            <li>
+              <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+            </li>
+          </ul>
+        </div>
+        <!-- search-bar option  -->
+        <div class="flex-bar">
+          <ul class="leftmenu flex">
+            <li><a href="sale.html">Sale</a></li>
+            <li><a href="insights.html">Insights</a></li>
+            <li><a href="#">Shop By</a></li>
+            <li><a href="#">Brands</a></li>
+            <li><a href="#">Clothing</a></li>
+            <li><a href="#">Shoes</a></li>
+            <li><a href="#">Bags</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">jewelry</a></li>
+            <li><a href="#">Pre-Owned</a></li>
+            <li><div class="search-bar-section">
+              <input type="text" placeholder="Search" id="search"/><span class="icon"><i class="fas fa-search"></i></span>
+            </div></li>
+          </ul>
+        
+        </div>
+      </nav>
+
+      <!-- nav done -->
+      <div id="BodyContainer">
+        <div id="direction">
+          <p>Home</p>
+          <i class="fas fa-arrow-right"></i>
+          <p>Women</p>
+          <i class="fas fa-arrow-right"></i>
+          <p>Clothing</p>
+        </div>
+        <br />
+        <h1>WOMEN'S DESIGNER CLOTHING</h1>
+      </div>
+  
+      <!-- sorting and filter select html  -->
+      <div id="sortFilter">
+        <select name="" id="priceSort" onchange="handlePriceSort()">
+          <option value="">Price Sort</option>
+          <option value="high">High-To-Low</option>
+          <option value="low">Low-To-High</option>
+        </select>
+  
+        <!-- filter by brand name  -->
+        <select name="" id="brandFilter" onchange="filterBrand()">
+          <option value="">Select Brand</option>
+          <option value="DOICE & GABANA">Doice & Gabana</option>
+          <option value="MARINE SERRE">Marine Serre</option>
+          <option value="HERON PRESTON">Heron Preston</option>
+          <option value="ALEXANDER MCQUEEN">Alexander Mcqueen</option>
+          <option value="MOSCHINO">Moschino</option>
+          <option value="OFF WHITE">Off-White</option>
+          <option value="DAILY PAPER">Daily Paper</option>
+          <option value="GUCCI">Gucci</option>
+        </select>
+  
+        <!-- filter by category  -->
+        <select name="" id="CategoryFilter" onchange="filterCategory()">
+          <option value="">Select Category</option>
+          <option value="JACKET">Jacket</option>
+          <option value="T-SHIRT">T-Shirt</option>
+          <option value="PANT">Pant</option>
+          <option value="SHIRT">Shirt</option>
+          <option value="SHOES">Shoes</option>
+          <option value="BAG">Bag</option>
+          <option value="WATCH">Watch</option>
+          <option value="SUNGLASSES">Sunglasses</option>
+        </select>
+      </div>
+     
+
+      <div id="footerContainer">
+        <div class="flex">
+          <div>
+            <div><p>FARFETCH APP</p></div>
+            <div>
+              <a href="https://www.farfetch.com/in/discover-app/"
+                >Farfetch App for IOS and Android</a
+              >
+            </div>
+          </div>
+          <div>
+            <div><p>DESTINATION/REGION, CURRENCY AND LANGUAGE</p></div>
+            <div><p>India, USD $</p></div>
+            <br>
+            <div>FOLLOW US</div>
+            <br>
+            <div class="socialMediaIcons">
+              <a href="https://www.instagram.com/farfetch/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://www.facebook.com/Farfetch/"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="https://twitter.com/farfetch"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="https://www.snapchat.com/add/farfetch.com"
+                ><i class="fab fa-snapchat"></i
+              ></a>
+              <a href="https://www.youtube.com/user/farfetchdotcom"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+          <div class="flex customerAndabout">
+            <div>
+              <p>CUSTOMER SERVICE</p>
+              <p>Help & contact us</p>
+              <p>Orders & shipping</p>
+              <p>Payment & pricing</p>
+              <p>Returns & refunds</p>
+              <p>FAQs</p>
+              <p>Terms & conditions</p>
+              <p>Privacy policy</p>
+              <p>Accessibility</p>
+            </div>
+            <div>
+              <p>ABOUT FARFETCH</p>
+              <p>About Us</p>
+              <p>Investors</p>
+              <p>Boutique Partners</p>
+              <p>Affiliate Programme</p>
+              <p>
+                Student discount <br />
+                UNiDAYS
+              </p>
+              <p>Careers</p>
+              <p>Customer Promise</p>
+              <p>FARFETCH App</p>
+              <p>Sitemap</p>
+              <p>Positively FARFETCH</p>
+            </div>
+          </div>
+        </div>
+        <div class="copyRight">
+          <p>
+            FARFETCH' and the 'FARFETCH' logo are trade marks of FARFETCH UK
+            Limited and are registered in numerous jurisdictions around the
+            world. <br />
+            © Copyright 2022 FARFETCH UK Limited. All rights reserved.
+          </p>
+        </div>
+      </div>
+
+      
+ </body>
+ <script>
+let womensData = JSON.parse(localStorage.getItem("womensData"));
+
+let cartArr =JSON.parse(localStorage.getItem("cartItem")) || [];
+
+let wishArr =JSON.parse(localStorage.getItem("wishItem")) || [];
+
+displayData(womensData);
+
+
+
+
+
+function displayData(womensData){
+document.querySelector("#container").innerHTML = "";
+womensData.map(function (data) {
+  //main div of product -->
+  let div = document.createElement("div");
+
+  //image -->
+  let image = document.createElement("img");
+  image.setAttribute("src", data.image_url);
+
+  //brand-name -->
+  let brand = document.createElement("p");
+  brand.textContent = data.brand;
+
+  // name -->
+  let name = document.createElement("p");
+  name.textContent = data.name;
+
+  //creating a div - contain symPrice & strikedoffprice -->
+  let div2 = document.createElement("div");
+  div2.setAttribute("id", "div2");
+  //creating a small symbol price div which contain rupee symbol and price of product-->
+  let symPrice = document.createElement("div");
+  symPrice.setAttribute("id", "symPrice");
+
+  let symbol = document.createElement("p");
+  symbol.textContent = data.Symbol;
+
+  let price = document.createElement("p");
+  price.textContent = data.price;
+
+  symPrice.append(symbol, price);
+
+  let strikPri = document.createElement("p");
+  strikPri.textContent = data.strikedoffprice;
+  strikPri.style.textDecoration = "line-through";
+  strikPri.style.color = "grey";
+
+
+  div2.append(symPrice, strikPri);
+
+  //   created a div for "add to cart button" && "wishlist button" -->
+  let btnDiv = document.createElement("div");
+  btnDiv.setAttribute("id" , "btnDiv");
+
+  let addBtn = document.createElement("button");
+  addBtn.textContent = "Add To Cart";
+  addBtn.addEventListener("click" , function(){
+    addToCart(data)
+  })
+
+  let wishBtn = document.createElement("button");
+  wishBtn.textContent = "Wishlist";
+  wishBtn.addEventListener("click" , function(){
+    wishlist(data)
+  })
+
+  btnDiv.append(addBtn,wishBtn);
+
+  //appending-->
+  div.append(image, brand, name, div2,btnDiv);
+
+  document.querySelector("#container").append(div);
+});
+}
+
+
+
+
+//function for addtocart button-->
+function addToCart(data) {
+    console.log(data);
+    cartArr.push(data);
+    localStorage.setItem("cartItem", JSON.stringify(cartArr));
+  }
+
+
+
+  // function for wishlist button-->
+  function wishlist(data) {
+    console.log(data);
+    wishArr.push(data);
+    localStorage.setItem("wishItem", JSON.stringify(wishArr));
+  }
+
+
+
+//sorting to handle price -->
+
+function handlePriceSort(){
+  let selected = document.querySelector("#priceSort").value;
+  // console.log(selected);
+  if (selected == "high"){
+    //descending price 
+    womensData.sort(function(a,b){
+      return b.price - a.price;
+    })
+  }
+  if(selected == "low"){
+    //ascending
+    mensData.sort(function(a,b){
+      return a.price - b.price;
+    })
+
+  }
+  console.log(womensData);
+  displayData(womensData);
+}
+  
+
+
+//filter by Brand Name -->
+
+function filterBrand(){
+  let selected = document.querySelector("#brandFilter").value
+  console.log(selected);
+
+  let filteredList = womensData.filter(function(elem){
+    return elem.brand ==selected;
+  });
+
+  console.log(filteredList);
+  displayData(filteredList);
+}
+
+
+//filter by Category-->
+function filterCategory(){
+  let selected = document.querySelector("#CategoryFilter").value
+  console.log(selected);
+
+  let filteredList = womensData.filter(function(elem){
+    return elem.category == selected;
+  });
+
+  console.log(filteredList);
+  displayData(filteredList);
+}
+ </script>
+ </html>

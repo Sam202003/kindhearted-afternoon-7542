@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -103,10 +103,125 @@ main {
     background-color: black;
   color: white;
 }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.nav {
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+}
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  transition: all 0.3s ease-in-out;
+}
+h1 .logo a {
+  font-size: 15px;
+  font-weight: 700;
+}
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+.leftmenu a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.3s ease-in-out;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+.rightmenu a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.3s ease-in-out;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+.logo a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.3s ease-in-out;
+  font-size: 38px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif !important;
+}
+.nav a:hover {
+  background-color: rgb(249, 249, 249);
+  cursor: pointer;
+}
+.search-bar {
+  justify-content: space-between;
+  padding: 10px 100px 10px 100px;
+  letter-spacing: 2px;
+}
+.search-bar input {
+  height: 33px;
+  width: 260px;
+  align-items: center;
+  letter-spacing: 2px;
+}
+.search-bar-section {
+  height: 40px;
+  width: 300px;
+  border-radius: 6px;
+  border: 2px solid rgb(180, 180, 180);
+}
+.icon {
+  text-align: center;
+  margin: auto;
+  margin-left: 5px;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+#search {
+  border: none;
+  place-content: none;
+}
   </style>
   <body>
     <!-- importing nav-bar  -->
-    <div id="nab"></div>
+    function navBar(){
+      return `<nav class="nav">
+        <div id="salebox"><p>Sale | 10,000 items at 60% off | Shop Now</p></div>
+      <div class="container flex">
+        <!--menus like- women,men & kids(nav-bar)-->
+        <ul class="leftmenu flex">
+          <li><a href="men1.html">Men</a></li>
+          <li><a href="women.html">Women</a></li>
+          <li><a href="#">Kids</a></li>
+        </ul>
+        <!--website name / home button (nav-bar)-->
+        <h1 class="logo"><a href="nav1.html">FARFETCH</a></h1>
+        <!--icons button like- country,profile,wishlist and cart (nav-bar)-->
+        <ul class="rightmenu flex">
+          <li>
+            <a href="#"><i class="fas fa-flag"></i></a>
+          </li>
+          <li>
+            <a href="signup.html"><i class="far fa-user"></i></a>
+          </li>
+          <li>
+            <a href="wishlist.html"><i class="fa-solid fa-heart"></i></a>
+          </li>
+          <li>
+            <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+          </li>
+        </ul>
+      </div>
 
     <!-- Main- content of Cart - Page  -->
     <main>
