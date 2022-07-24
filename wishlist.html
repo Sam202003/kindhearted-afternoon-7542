@@ -13,7 +13,7 @@
     <title>Wishlist-Page</title>
   </head>
   <style>
-    *{
+*{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -67,16 +67,16 @@ body {
 
   </style>
   <body>
-    <!-- importing nav-bar  -->
+    
     <div id="nab"></div>
 
     <h1 class="text"><i class="far fa-star"></i>  WISHLIST</h1>
     <div id="container"></div>
 
-    <!-- ----- importing Get off  form -> ----- -->
+   
     <div id="getOff"></div>
 
-    <!-- ----- importing Footer  -> ----- -->
+    
     <div id="foot"></div>
   </body>
   <script src="wishlist.js">var wishArr = JSON.parse(localStorage.getItem("wishItem"));
@@ -84,60 +84,60 @@ body {
     console.log(wishArr);
     
     wishArr.map(function (data) {
-      //main div of product -->
-      var div = document.createElement("div");
+      
+      let div = document.createElement("div");
     
-      //image -->
-      var image = document.createElement("img");
+      
+      let image = document.createElement("img");
       image.setAttribute("src", data.image_url);
     
-      //brand-name -->
-      var brand = document.createElement("p");
+      
+      let brand = document.createElement("p");
       brand.textContent = data.brand;
     
-      // name -->
-      var name = document.createElement("p");
+      
+      let name = document.createElement("p");
       name.textContent = data.name;
     
-      //creating a div - contain symPrice & strikedoffprice -->
-      var div2 = document.createElement("div");
+      
+      let  div2 = document.createElement("div");
       div2.setAttribute("id", "div2");
-      //creating a small symbol price div which contain rupee symbol and price of product-->
-      var symPrice = document.createElement("div");
+
+      let symPrice = document.createElement("div");
       symPrice.setAttribute("id", "symPrice");
     
-      var symbol = document.createElement("p");
+      let symbol = document.createElement("p");
       symbol.textContent = data.Symbol;
     
-      var price = document.createElement("p");
+      let price = document.createElement("p");
       price.textContent = data.price;
     
       symPrice.append(symbol, price);
     
-      var strikPri = document.createElement("p");
+      let strikPri = document.createElement("p");
       strikPri.textContent = data.strikedoffprice;
       strikPri.style.textDecoration = "line-through";
       strikPri.style.color = "grey";
     
     
       // removing button for wishlist page --->
-      var remove = document.createElement("button");
+      let remove = document.createElement("button");
       remove.setAttribute("id" ,"removeBtn" )
       remove.textContent = "Remove";
       remove.addEventListener("click", function () {
         cremove(data);
       });
       function cremove(product) {
-        var iid = product.price;
+        let iid = product.price;
         // console.log(iid);
-        var rl = JSON.parse(localStorage.getItem("wishItem"));
+        let rl = JSON.parse(localStorage.getItem("wishItem"));
         console.log(rl);
-        var arr = [];
+        let arr = [];
         for (key in rl) {
           if (iid != rl[key].price) {
             arr.push(rl[key]);
           }
-          // console.log(rl.price)
+          
         }
         console.log(arr);
         localStorage.setItem("wishItem", JSON.stringify(arr));
@@ -153,7 +153,7 @@ body {
       
       div2.append(symPrice, strikPri);
     
-      //appending-->
+      
       div.append(image, brand, name, div2,remove);
     
       document.querySelector("#container").append(div);

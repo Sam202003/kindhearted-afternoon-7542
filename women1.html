@@ -143,86 +143,52 @@ body {
 </body>
 </html>
 <script>
-    let womensData=JSON.parse(localstorage.getItem("womensData"));
+   let womensData = JSON.parse(localStorage.getItem("womensData"));
 
-    let cartArr=JSON.parse(localStorage.getItem("cartItem")) || [];
+let cartArr =JSON.parse(localStorage.getItem("cartItem")) || [];
 
-    let wishArr=JSON.parse(localStorage.getItem("WishItem")) || [];
+let wishArr =JSON.parse(localStorage.getItem("wishItem")) || [];
 
-    displayData(womensData);
+displayData(womensData);
 
-    let womensData=[
-        {
-            image_url:"https://cdn-images.farfetch-contents.com/18/11/65/02/18116502_38510708_600.jpg",
-            name:"Doice",
-            brand:"Doice and Gabana",
-            category:"Jacket",
-            Symbol:"$",
-            price:789,
-            strikeoffprice:999,
-        },
-        {
-            image_url:"https://cdn-images.farfetch-contents.com/18/11/65/02/18116502_38510708_600.jpg",
-            name:"Doice",
-            brand:"Doice and Gabana",
-            category:"Jacket",
-            Symbol:"$",
-            price:789,
-            strikeoffprice:999,
-        },
-        {
-            image_url:"https://cdn-images.farfetch-contents.com/18/11/65/02/18116502_38510708_600.jpg",
-            name:"Doice",
-            brand:"Doice and Gabana",
-            category:"Jacket",
-            Symbol:"$",
-            price:789,
-            strikeoffprice:999,
-        },
-        {
-            image_url:"https://cdn-images.farfetch-contents.com/18/11/65/02/18116502_38510708_600.jpg",
-            name:"Doice",
-            brand:"Doice and Gabana",
-            category:"Jacket",
-            Symbol:"$",
-            price:789,
-            strikeoffprice:999,
-        }
-    ];
-    localStorage.setItem("womensData",JSON.stringify(womensData));
 
-    function display(womensData){
-        document.querySelector("#container").innerHTML="";
-        womensData.map(function(data){
-            let div=document.createElement("div");
 
-            let image=document.createElement("img");
-            image.setAttribute("src",data.image_url);
 
-            //brand-name -->
-  var brand = document.createElement("p");
+
+function displayData(womensData){
+document.querySelector("#container").innerHTML = "";
+womensData.map(function (data) {
+  //main div of product -->
+  let div = document.createElement("div");
+
+  //image -->
+  let image = document.createElement("img");
+  image.setAttribute("src", data.image_url);
+
+  //brand-name -->
+  let brand = document.createElement("p");
   brand.textContent = data.brand;
 
   // name -->
-  var name = document.createElement("p");
+  let name = document.createElement("p");
   name.textContent = data.name;
 
   //creating a div - contain symPrice & strikedoffprice -->
-  var div2 = document.createElement("div");
+  let div2 = document.createElement("div");
   div2.setAttribute("id", "div2");
   //creating a small symbol price div which contain rupee symbol and price of product-->
-  var symPrice = document.createElement("div");
+  let symPrice = document.createElement("div");
   symPrice.setAttribute("id", "symPrice");
 
-  var symbol = document.createElement("p");
+  let symbol = document.createElement("p");
   symbol.textContent = data.Symbol;
 
-  var price = document.createElement("p");
+  let price = document.createElement("p");
   price.textContent = data.price;
 
   symPrice.append(symbol, price);
 
-  var strikPri = document.createElement("p");
+  let strikPri = document.createElement("p");
   strikPri.textContent = data.strikedoffprice;
   strikPri.style.textDecoration = "line-through";
   strikPri.style.color = "grey";
@@ -230,17 +196,17 @@ body {
 
   div2.append(symPrice, strikPri);
 
-  //   created a div for "add to cart button" && "wishlist button" -->
-  var btnDiv = document.createElement("div");
+  
+  let btnDiv = document.createElement("div");
   btnDiv.setAttribute("id" , "btnDiv");
 
-  var addBtn = document.createElement("button");
+  let addBtn = document.createElement("button");
   addBtn.textContent = "Add To Cart";
   addBtn.addEventListener("click" , function(){
     addToCart(data)
   })
 
-  var wishBtn = document.createElement("button");
+  let wishBtn = document.createElement("button");
   wishBtn.textContent = "Wishlist";
   wishBtn.addEventListener("click" , function(){
     wishlist(data)
@@ -279,11 +245,11 @@ function addToCart(data) {
 //sorting to handle price -->
 
 function handlePriceSort(){
-  var selected = document.querySelector("#priceSort").value;
+  let selected = document.querySelector("#priceSort").value;
   // console.log(selected);
   if (selected == "high"){
     //descending price 
-    mensData.sort(function(a,b){
+    womensData.sort(function(a,b){
       return b.price - a.price;
     })
   }
@@ -294,8 +260,8 @@ function handlePriceSort(){
     })
 
   }
-  console.log(mensData);
-  displayData(mensData);
+  console.log(womensData);
+  displayData(womensData);
 }
   
 
@@ -303,10 +269,10 @@ function handlePriceSort(){
 //filter by Brand Name -->
 
 function filterBrand(){
-  var selected = document.querySelector("#brandFilter").value
+  let selected = document.querySelector("#brandFilter").value
   console.log(selected);
 
-  var filteredList = mensData.filter(function(elem){
+  let filteredList = womensData.filter(function(elem){
     return elem.brand ==selected;
   });
 
@@ -317,19 +283,15 @@ function filterBrand(){
 
 //filter by Category-->
 function filterCategory(){
-  var selected = document.querySelector("#CategoryFilter").value
+  let selected = document.querySelector("#CategoryFilter").value
   console.log(selected);
 
-  var filteredList = mensData.filter(function(elem){
+  let filteredList = womensData.filter(function(elem){
     return elem.category == selected;
   });
 
   console.log(filteredList);
   displayData(filteredList);
-
 }
-
-    
-    
-
-</script>
+ </script>
+ </html>
