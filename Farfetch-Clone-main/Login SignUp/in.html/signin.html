@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="../in.css/signin.css">
+   <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAclBMVEUAAAD////8/PyMjIykpKR7e3tLS0vJycnPz89+fn6oqKjs7Oxvb2/Dw8ORkZFgYGDk5OSvr688PDwUFBQiIiK6urrZ2dkwMDA4ODj29vZVVVWamprV1dVaWlrw8PDm5uYpKSloaGgMDAxCQkIbGxskJCTDe6iFAAAEFElEQVR4nO2ci1raQBCFN1wFFEEFRRBR6/u/YostlSq1e2Znc7Lp+R9gOP+XC8nuTEKFMRvO16On+6vddSiFeLlN7/yGndZC5KHrDdhBzUToLbvP7JQp/EuvM96xIybytd9kxM6Xzpd+5+x0Hnxxfrbg+O35q+CcncyLv52gV+xgbpwWHLNjOXJS8JKdypNTZ+g3dihXPgtu2JGc+SR4wU7kzUfBBTuQO60X/GB4xo6TgT8EZ+w0OTgWXLHDZOHYsD1PasccCXbZWfLQ7rvMnndDdpJc/Bbss5Pk4iC4ZAfJxsHwlh0kG+19WjvQ8ttMOBi2ZtnpBK0/hKHtV+Evwzt2ipw4/BfePXV7i+FyNlmtOs3jzdC+fD+YXkyqZvNmaNQbDdnpY9gbmlbXBhfs6JHsDQ17aPdLdvBo9oaw3/MZOzZAMLz5nrNDQ/wwnIKCY3ZmjACvP5VyhzkQqg4muGAnRgngZdhlB4YJVQ8RfGHnxQnVE2LY9Ee0E4QK6cabsuMaCND/PTuthfDY8kNYhSFguGWntRCANagHdlgTYR1vWNyf/RsBeL/vsMOaCPEvhwN2VhvhPtpwzc5qI7xEG5b02ntEiN9zKvMyrEJ0l941O6qRED1ocMmOaiT6HC3zka1CDOfsqEbiDQu9lQKGM3ZUI/GGK9ff3S6Hi/F62s1PvKGb3Gbcb2YDnYvdbN3cKb/bdL3JtNGDp8lvFsPmHr2fJD7SLJo/YJu04bQpoaesb/frlDHGODILltKZa96SQbcnaVhfLR7YwaMxrtIU1G1lM9yxYwOYDAs6giH0DILxK5VNwGBY2IQKbojsajUB2BDs8eADG0L9AU0ANSzlWe0d1PCVHRgGNCywNx40LPCjBZhhiUP9mGHT12ROARlO2GktQIZAg0dzgAx37LQWEMMiT1LIsMxZP8SwjNXDjyCG7Kw2AMMtO6sNwNDy6nvZnQ+Xj9sM4305DNFPod2NH+OLw+QwxMYZB5mHxHIYQl97y97EksMQ2aXP38OSwxAQrKENiWtYR1Mu13CTTwxPk8PwJp+XIU0Ow1raHamGtUy7Uw1rmcGhGubTsqTJYPiaT8uQJodhPSMqTMN6euOZhvV8uUCGOQ0TWuUAZCjDlJoy9EGGMkypKUMfZPgfGQLfv4otaW//R4g2fIifpIst+VLHcF5hTa5CCCGEEEIIIYQQQgghhBBCiEbQq9zn4frxJRMADN33lRu2jy9DQ00Z+iBDGabUlKEPMpRhSk0Z+iBDGabUlKEPMpRhSk0Z+iBDGabUlKEPMpRhSk0Z+iBDGabUlKEPMpRhSk0Z+iBDGabUlKEPMpRhSk0Z+iBDGabUlKEPMpRhSk0Z+iBDGabUlKEPMpRhSk0Z+iBDGabUlKEP7Tf8Duu/aUJiMkioAAAAAElFTkSuQmCC">
+   <link rel="stylesheet" href="../../components/navbar.css">
+   <script src="https://kit.fontawesome.com/21edb2d276.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="backlogo">
+        <img src="https://s22.q4cdn.com/426100162/files/design/ff-logo-mobile-v2.png" alt="backlogo">
+    </div>
+    <div id="container">
+        <div id="signin">
+            <div>
+                <div id="coix">
+            <h2>Come on in</h2>
+            <i onclick="funx()" class="fa-solid fa-x"></i>
+               </div>
+            <div id="sorl">
+                <h4>SIGN IN</h4>
+                <h4  onclick="funsignup()">I'M NEW HERE</h4>
+            </div>
+            <hr>
+            </div>
+            <div id="info">
+                <h5>Email address</h5>
+                <input type="text" id="email">
+                <h5>Password</h5>
+                <input type="password" id="password">
+                <div id="wrongdetials"></div>
+               <div id="keepmeSI">
+                <input type="checkbox" id="huey" name="drone" value="True">
+              <label for="huey">Keep me signed in. What is this?</label>
+              </div>
+              <p onclick="funforgetpass()" id="fyp">Forgot your password?</p>
+              <button onclick="funsignbutton()" id="signinbutton">Sign In</button>
+              <h4 id="or">OR</h4>
+              <div class="gaf">
+                <img src="https://cdn.freebiesupply.com/logos/large/2x/google-g-2015-logo-png-transparent.png" alt="googlelogo">
+               <h4> Continue With Google</h4>
+            </div>
+            <div class="gaf">
+                <img src="https://logolook.net/wp-content/uploads/2021/06/Apple-Logo.svg" alt="applelogo">
+                <h4>Continue With Apple</h4>
+            </div>
+            <div class="gaf">
+                <img src="https://www.edigitalagency.com.au/wp-content/uploads/Facebook-logo-blue-circle-large-transparent-png.png" alt="Facebooklogo">
+              <h4>  Continue With Facebook</h4>
+            </div>
+            <h5 onclick="funnewtoff()" id="nfr">New to FARFETCH? Register.</h5>
+        </div>
+    </div>
+</body>
+<script src="../script/signin.js"></script>
+</html>

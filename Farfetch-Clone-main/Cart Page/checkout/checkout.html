@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+
+<body>
+    <div id="head">
+        <div>
+            <div class="div">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M80 192V144C80 64.47 144.5 0 224 0C303.5 0 368 64.47 368 144V192H384C419.3 192 448 220.7 448 256V448C448 483.3 419.3 512 384 512H64C28.65 512 0 483.3 0 448V256C0 220.7 28.65 192 64 192H80zM144 192H304V144C304 99.82 268.2 64 224 64C179.8 64 144 99.82 144 144V192z"/></svg>
+                <h3>Secure Checkout</h3>
+                 <img src="../logo1.png" alt="">
+            </div>
+
+        </div>
+        <div>
+            <img src="../logo.png" alt="Website Logo" id="logo">
+        </div>
+        <div>
+            <h3>Need Help ?</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45l100.8-23.25C139.7-2.602 154.7 5.018 160.8 18.92l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z"/></svg>
+               <p>(+44 (0) 20 3510 0670)
+
+
+            </p>
+        </div>
+    </div>
+
+
+ <div id="big">
+    <div id="req">
+        <h3>Add your delivery address</h3>
+        <p>
+            * Required fields</p>
+        <div class="input">
+            <div>
+                <p>First Name*</p>
+                <input type="text" id="first">
+            </div>
+            <div>
+                <p>Last Name*</p>
+                <input type="text" name="" id="last">
+            </div>
+        </div>
+        <select name="" id="select">
+            <option value="India">India(USD$)</option>
+            <option value="India">Indonesia(USD$)</option>
+            <option value="India">Iraq(USD$)</option>
+            <option value="India">Ireland(EUR€)</option>
+            <option value="India">Japan(JPY¥)</option>
+        </select>
+        <p>Address</p>
+        <input type="text" class="address">
+        <input type="text" name="" class="address">
+        <div class="input">
+            <div>
+                <p>City*</p>
+                <input type="text" id="city">
+            </div>
+            <div>
+                <p>State</p>
+                <input type="text" name="" id="state">
+            </div>
+        </div>
+        <p>Postal or zip code *</p>
+        <input type="text" class="address">
+        <div class="input">
+            <div>
+                <p>Country Calling Code *</p>
+                <select name="" id="">
+                    <option value="">+91</option>
+                    <option value="">+62</option>
+                    <option value="">+964</option>
+                    <option value="">+353</option>
+                    <option value="">+44</option>
+                    <option value="">+972</option>
+                    <option value="">+39</option>
+                    <option value="">+1876</option>
+                    <option value="">+81</option>
+                </select>
+            </div>
+            <div>
+                <p>Phone*</p>
+                <input type="text" name="" id="phone">
+            </div>
+        </div>
+        <div class="billing">
+            <input type="checkbox" name="" id="checkbox">
+            <p>Use as billing address</p>
+        </div>
+        <div></div>
+
+    </div>
+
+
+    <!-- ================================    -->
+
+    <div id="req2">
+        <h2>Summary</h2>
+        <div id="product">
+         
+        </div>
+        <div id="delivery">
+            <h4 class="sub">Delivery</h4>
+            <h4 id="delivery1"></h4>
+        </div>
+        <hr>
+        <div id="totalprice">
+            <h4 class="sub">Total</h4>
+            <h4 id="price"></h4>
+           
+        </div>
+            <button id="placed">Proceed to Payment</button>
+    </div>
+ </div>
+</body>
+</html>
+
+<script src="../checkout/checkout.js"></script>

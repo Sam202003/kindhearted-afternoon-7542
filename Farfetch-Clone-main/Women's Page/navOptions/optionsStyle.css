@@ -1,0 +1,139 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Archivo', sans-serif; */
+    font-size: 16px;
+    text-decoration: none;
+}
+a{
+    color: black;
+}
+
+#navbar{
+    height: 100px;
+    background-color: white;
+}
+#navMenu{
+    background-color: white;
+   
+    margin-top: 0px;
+    justify-content: space-around;
+}
+#navOptions{
+    width: 780px;
+    margin: 1.5% 5%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 0;
+    color: rgb(35, 35, 35);
+}
+#navOptions>a:first-child{
+    color: red;
+}
+#navOptions>a{
+    text-decoration: none;
+    color:black;
+}
+#container{
+    display: grid;
+    width: 90%;
+    margin:70px auto;
+    gap: 70px;
+   
+    grid-template-columns: repeat(4,1fr);
+}
+#card{
+    height: auto;
+    
+    cursor: pointer;
+}
+#card>#img{
+    width: 100%;
+}
+#card>h3{
+    margin-top: 5px;
+    font-size: 20px;
+}
+#priceDiv{ 
+    width: 42%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#priceDiv>span:first-child{
+    text-decoration: line-through;
+    margin-right: 5px;
+}
+#priceDiv>span:last-child{
+    color: red;
+    margin-left: 20px;
+    /* font-weight: 700; */
+    font-size: 20px;
+}
+#addToWishlist{
+    height: 25px;
+    margin-left: 90%;
+    margin-bottom: 5px;
+}
+select{
+    border: 0px;
+    font-size: 20px;
+    font-weight: 900;
+}
+#sortFilter{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+@media all and (min-width:100px) and (max-width:750px)
+{
+    *{
+        font-size: 10px;
+    }
+    #saleLine , #navMenu{
+        height: 22px;
+    }
+    #navbar{
+        height: 50px;
+        background-color: rgb(255, 255, 255);
+    }
+    #navMenu{
+        background-color: white;
+        margin-top: 0px;
+        width: 90%;
+        justify-content: space-between;
+    }
+    #navOptions{
+        width: 80%;
+    }
+    #search{
+        height:5px;
+        width:50px;
+        padding: 7px;
+    }
+    #container{
+        display: grid;
+        width: 90%;
+        margin:30px auto;
+        gap: 40px;
+        
+        grid-template-columns: repeat(3,1fr);
+    }
+    #card>h3{
+        font-size: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    #addToWishlist{
+        height: 15px;
+    }
+    #priceDiv>#finalPrice{
+        font-size: 12px;
+    }
+    #sortFilter>select{
+        font-size: 12px;
+    }
+}

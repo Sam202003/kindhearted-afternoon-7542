@@ -1,0 +1,162 @@
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+#backlogo{
+    width: 20%;
+    height: 30px;
+    margin: auto;
+    margin-top: 30px;
+}
+#backlogo>img{
+    width: 100%;
+    height: 100%;
+}
+
+#container{
+    border: 1px solid black;
+    width: 29%;
+    height: 550px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+#coix{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+#signup{
+    width: 85%;
+    height: 500px;   
+    /* border: 1px solid;  */
+    margin: auto;
+}
+
+#sorl{
+    display: flex;
+    gap: 19px;
+    margin-bottom: -20px;
+}
+#sorl>h4:last-child{
+    border-bottom: 2px solid black;
+    margin-bottom: 19px;
+}
+#sorl>h4:last-child:hover{
+    cursor: pointer;
+}
+
+#sorl>h4:first-child{
+    color: rgb(78, 78, 78);
+}
+#sorl>h4:first-child:hover{
+    color: black;
+    cursor: pointer;
+}
+
+
+hr{
+    margin-top: -15px;
+}
+
+#info{
+    max-height: 400px;
+    overflow: auto;
+    margin-top: 0%;
+    }
+
+    #info>input{
+        width: 95%;
+        height: 40px;
+        margin-top: -15px;
+        border-radius: 7px;
+        border: 1px solid rgb(94, 93, 93);
+    }
+    #info>input:hover{
+        border: 1px solid black;
+    }
+
+    #signupbutton{
+        width: 97%;
+        height: 40px;
+        border-radius: 7px;
+        border: 1px solid black;
+        font-size: 16px;
+        color: whitesmoke;
+        background-color: black;
+        font: bold;
+        margin-top: 10px;
+    }
+    #signupbutton:hover{
+        background-color: rgb(119, 114, 114);
+        border: 1px solid rgb(119, 114, 114);
+    }
+
+    #byregister{
+        font-size: 13px;
+    }
+    #checkbox{
+        font-size: 13px;
+    }
+    .gaf{
+        border: 1px solid black;
+        width: 97%;
+        height: 40px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        border-radius: 7px;
+    }
+
+    .gaf:hover{
+        background-color: rgb(248, 248, 248);
+    }
+    .gaf>img{
+        height: 30px;
+        width: 30px;
+        margin-left: 20px;
+    }
+    .gaf>h4{
+       margin-right: 40px;
+    }
+    #or{
+        text-align: center;
+    }
+
+    @media all and (min-width: 451px) and (max-width:750px){
+        #container{
+            width: 60%;
+        }
+
+        .gaf>h4{
+            font-size: 15px;
+            margin-right: 10%
+        }
+        #backlogo{
+            width: 40%;
+            height: 25px;
+        }
+        #checkbox{
+            font-size: 12px;
+        }
+
+    }
+
+    @media all and (min-width:100px) and (max-width:450px){
+        #container{
+            width: 80%;
+        }
+        #backlogo{
+            width: 30%;
+            height: 20px;
+        }
+        .gaf>h4{
+            font-size: 13px;
+            margin-right: 10%
+        }
+        #checkbox{
+            font-size: 10px;
+        }
+    }

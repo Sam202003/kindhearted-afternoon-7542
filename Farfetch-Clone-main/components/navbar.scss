@@ -1,0 +1,56 @@
+#nav{ 
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    padding-bottom: 1%;
+    background-color: inherit;
+    top: 0;
+    #navbar{
+        height: 10vh;
+        justify-content: space-between;
+        padding: 0 3%;
+
+            #category{
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                
+                button{
+                    margin: 0 1vh;
+                    &:hover{
+                        background-color: rgba(240, 238, 238, 0.454);
+                    }
+                }
+            }
+            #title{
+
+                @extend #category
+            }
+            #navigation{
+                .icons{
+                    margin: 0 2vh;
+                    cursor: pointer;
+                    position: relative;
+                    span{
+                        position: absolute;
+                        top: 10px;
+                    }
+                }
+                @extend #category
+
+            }        
+    }
+} 
+#search-bar{
+    display: flex;
+    width: 20%;
+    position: relative;
+    margin-left: 77%;
+    img{
+        position: absolute;
+        right: 2%;
+        top: 25%;
+        opacity: 0.5;
+    }
+    
+}

@@ -1,0 +1,302 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Archivo', sans-serif; */
+    font-size: 16px;
+    text-decoration: none;
+}
+a{
+    color: black;
+}
+#saleLine , #navMenu{
+    height: 42px;
+    width: 100vw;
+
+    background-color: #FF2D44;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#saleLine>a{
+    text-decoration: none;
+    color: white;
+}
+#saleLine>a:last-child{
+    text-decoration: underline;
+}
+#saleLine>a:hover{
+    text-decoration: underline;
+}
+#saleLine>a + a::before {
+    content: "|";
+    margin-left: 18px;
+    margin-right: 18px;
+}
+#navbar{
+    height: 100px;
+    background-color: white;
+}
+#navMenu{
+    background-color: white;
+    margin-top: 1%;
+    justify-content: space-around;
+}
+#navOptions{
+    width: 90%;
+    display: flex;
+
+    font-weight: 0;
+    color: rgb(35, 35, 35);
+}
+#navOptions>a{
+    text-decoration: none;
+    color: black;
+    margin-right: 2%;
+}
+#sale{
+    color: #d0152b;
+}
+/* #search{
+    height:20px;
+    width:250px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+} */
+#mainPart{
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+}
+#mainPart>img{
+    width: 33%;
+}
+#priceDiv{
+    display: flex;
+    align-items: center;    
+}
+#priceDiv>p{
+    font-size: 12px;
+    margin-left: 10px;
+}
+#detail{
+    width : 100%;
+    padding-left: 15px;
+}
+#detail>p{
+    color: grey;
+    margin-bottom: 5px;
+}
+div>h2{
+    margin-bottom:  5px;
+}
+h2+p{
+    font-size: 15px;
+}
+#price{
+    text-decoration: line-through;
+    margin-right: 7px;
+}
+#discount{
+    font-size: 13px;
+    margin-right: 10px;
+}
+#finalPrice{
+    color: red;
+}
+#sizeDiv>div{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: underline;
+    margin-bottom: 30px;
+}
+#sizeDiv>div>a{
+    font-size: 13px;
+}
+select{
+    height: 40px;
+    font-weight: 900;
+    width: 100%;
+    border-radius: 5px;
+    margin: 2% 0;
+}
+option>span{
+    font-weight: 900;
+    margin-right: 25px;
+}
+#cartButton{
+    width: 73%;
+    height: 40px;
+    border: 0px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 4% 0;
+}
+#cartButton:hover{
+    background-color: rgba(37, 37, 37, 0.69);
+}
+#favouriteButton{
+    width: 23%;
+    cursor: pointer;
+    height: 40px;
+    margin-left: 1%;
+    font-size: 15px;
+    border: 1px solid black;
+    font-weight: 900;
+    border-radius: 5px;
+    background-color: white;
+}
+#favouriteButton>img{
+    height: 15px;
+    
+}
+#addTocart+h3{
+    margin-top: 40px;
+}
+h3+p{
+
+}
+#options{
+    display: flex;
+    
+}
+#middleDetails{
+    display: grid;
+    margin: auto;
+    width: 90%;
+    gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+}
+#middleDetails>div>img{
+    width: 100%;
+}
+#options>button{
+    margin-left: 65px;
+    cursor: pointer;
+    border : 0px;
+    background-color: white;
+    margin-bottom: 25px;
+    text-decoration: underline;
+}
+
+#container{
+    display: grid;
+    width: 80%;
+    margin:70px auto;
+    gap: 70px;
+    grid-template-columns: repeat(4,1fr);
+}
+#card{
+    height: auto;
+    font-family: 'Archivo', sans-serif;
+    cursor: pointer;
+}
+#card>#img{
+    width: 100%;
+}
+#card>h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#priceDiv{
+  margin-top: 5px;
+    width: 42%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#priceDiv>span:first-child{
+    text-decoration: line-through;
+    margin-right: 5px;
+}
+#priceDiv>span:last-child{
+    color: red;
+    font-size: 20px;
+}
+#addToWishlist{
+    height: 25px;
+    margin-left: 90%;
+    margin-bottom: 5px;
+}
+#middle+h1{
+    font-size: 30px;
+    margin-left: 5%;
+    font-weight: 300;
+}
+#middleFooter{
+    width: 90%;
+    margin-left: 5%;
+    cursor: pointer;
+}
+
+@media all and (min-width:100px) and (max-width:750px)
+{
+    *{
+        font-size: 10px;
+    }
+    #saleLine , #navMenu{
+        height: 22px;
+    }
+    #navbar{
+        height: 50px;
+        background-color: rgb(255, 255, 255);
+    }
+    #navMenu{
+        background-color: white;
+        margin-top: 0px;
+        width: 90%;
+        justify-content: space-between;
+    }
+    #navOptions{
+        width: 80%;
+    }
+    #search{
+        height:5px;
+        width:50px;
+        padding: 7px;
+    }
+    #priceDiv>#finalPrice{
+        font-size: 10px;
+    }
+    #hoverProducts+#shopButton{
+        
+    }
+    #container+#shopButton{
+        
+    }
+    #download{
+        width: 70%;
+        margin: 5px auto;
+    }
+    #mainPart{
+        width: 100%;
+        margin: 50px auto;
+        display: flex;
+    }
+    #favouriteButton{
+        width: 45%;
+        font-size: 12px;
+    }
+    #cartButton{
+        width: 50%;
+        margin: 2% 0;
+    }
+    #middle+h1{
+    
+        font-size: 20px;
+    }
+    #addToWishlist{
+        height: 15px;
+    }
+    #container{
+        width: 90%;
+    }
+    #card>h3{
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    #middleFooter{
+        margin-left: 0px;
+    }
+}
