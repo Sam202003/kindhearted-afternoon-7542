@@ -1,0 +1,383 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Archivo', sans-serif; */
+    font-size: 16px;
+    text-decoration: none;
+}
+a{
+    color: black;
+}
+#saleLine , #navMenu{
+    height: 42px;
+    width: 100vw;
+    margin-top: -8px;
+    margin-left: -8px;
+    background-color: #FF2D44;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#saleLine>a{
+    text-decoration: none;
+    color: white;
+}
+#saleLine>a:last-child{
+    text-decoration: underline;
+}
+#saleLine>a:hover{
+    text-decoration: underline;
+}
+#saleLine>a + a::before {
+    content: "|";
+    margin-left: 18px;
+    margin-right: 18px;
+}
+#navbar{
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+}
+#navMenu{
+    background-color: white;
+    margin-top: 1%;
+    justify-content: space-around;
+}
+#navOptions{
+    width: 90%;
+    display: flex;
+
+    font-weight: 0;
+    color: rgb(35, 35, 35);
+}
+#navOptions>a{
+    text-decoration: none;
+    color: black;
+    margin-right: 2%;
+}
+/* #search{
+    height:20px;
+    width:250px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+} */
+
+#sale{
+    color: #d0152b;
+}
+#fPart,#tPart{
+    display: flex;
+    height: 625px;
+    width: 85%;
+    margin: 50px auto;
+    cursor: pointer;
+}
+#tPart{
+    height: auto;
+}
+#fPart>img{
+    height: 100%;
+}
+#fDisc>img{
+    margin-top: 120px; 
+    margin-left: 100px;
+    cursor: pointer;
+    width: 625px;
+}
+#sDisc{
+    display: flex;
+    align-items: center;
+    color:black;
+}
+#sDisc:hover{
+    text-decoration: none;
+}
+#sDisc>img{
+    height: 625px;
+   
+}
+#fDisc>.firstButton{
+    margin-left: 320px;
+   
+}
+#shopButton{
+    padding: 13px 40px;
+    border-radius: 7px;
+    border: 1px solid black;
+    font-weight: 600;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    background-color: white;
+}
+#shopButton:hover{
+    color: rgb(90, 90, 90);
+    cursor: pointer;
+}
+#sText{
+    text-align: center;
+    font-family: 'Archivo', sans-serif;
+}
+#sText>h1{
+    margin-bottom: 25px;
+    margin-top: -10px;
+    font-size: 40px;
+}
+#sText>p{
+    width: 80%;
+    margin-left: -15px;
+    margin: auto;
+}
+#johnHardy{
+    width: 50%;
+    height: auto;
+    margin-left: 20px;
+}
+#tPart{
+    width: 85%;
+    margin: 50px auto;
+}
+#tDisc{
+    color:black;
+    height: auto;
+}
+#tDisc>img{
+    width: 100%;
+}
+#tDisc>p{
+    text-align: left;
+    
+    margin-bottom: 12px;
+    font-size: 14px ;
+}
+#h3{
+    text-align: center;
+    width: 55%;
+    margin: 50px auto;
+    font-size: 25px;
+}
+#helpDiv{
+    height : 400px;
+    width: 85%;
+    display: flex;
+    margin:  auto;
+}
+#hoverProducts + .hoverButton{
+margin-top: 150px;
+}
+
+#helpDiv{
+    height : auto;
+    margin-top: 50px;
+    justify-content: space-around;
+
+}
+#helpDiv>div>img{
+    height : 20px; 
+
+    margin-bottom: -10px;
+}
+#helpDiv>div{
+    border: 1px solid rgba(233, 233, 233, 0.736);
+    height: 100px;
+    width: 28%;
+    padding: 10px 20px 0px 20px;
+}
+#helpDiv>div:hover{
+    background-color:  rgba(233, 233, 233, 0.736);
+}
+
+#download{
+    width: 50%;
+    margin: 150px auto;
+}
+p>a{
+    color:black;
+    text-decoration: underline;
+}
+#download>h1{
+    font-size: 35px;
+    text-align: left;
+    font-weight: 900;
+    font-family: 'Archivo', sans-serif;
+}
+#download>div{
+    display: flex;
+    justify-content: space-between;
+}
+#mail{
+    width: 60%;
+}
+#qrcode{
+    width: 30%;
+}
+#qrcode>img{
+width:50%;
+}
+#inputField{
+    height:35px;
+    width: 60%;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid grey;
+}
+#sendMail{
+    height: 38px;
+    margin-left: 15px;
+    padding: 0px 15px 0px 15px;
+    background-color: black;
+    border: 0px;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+}
+#sendMail:hover{
+    background-color: rgb(37, 37, 37);
+    
+}
+#container , #highlights , #hoverProducts{
+    display: grid;
+    width: 90%;
+    margin:70px auto;
+    gap: 70px;
+    grid-template-columns: repeat(4,1fr);
+}
+#stoneIsland{
+    width: 90%;
+   margin: auto;
+   margin-top:70px;
+    display: flex;
+}
+#stoneIsland>div{
+    /* border: 1px solid red; */
+    margin-left: 20px;
+}
+#stoneIsland>div>img{
+    width: 100%;
+}
+#card{
+    height: auto;
+    font-family: 'Archivo', sans-serif;
+    cursor: pointer;
+}
+#card>#img{
+    width: 100%;
+}
+#card>h3{
+    margin-top: 0px;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+#priceDiv{
+  
+    width: 42%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#priceDiv>span:first-child{
+    text-decoration: line-through;
+    margin-right: 5px;
+}
+#priceDiv>span:last-child{
+    color: red;
+    margin-left: 20px;
+    /* font-weight: 700; */
+    font-size: 20px;
+}
+#addToWishlist{
+    height: 25px;
+    margin-left: 90%;
+    margin-bottom: 5px;
+}
+
+@media all and (min-width:100px) and (max-width:750px)
+{
+    *{
+        font-size: 10px;
+    }
+    #saleLine , #navMenu{
+        height: 22px;
+    }
+    #navbar{
+        height: 50px;
+        background-color: rgb(255, 255, 255);
+    }
+    #navMenu{
+        background-color: white;
+        margin-top: 0px;
+        width: 100%;
+        justify-content: space-between;
+    }
+    #navOptions{
+        width: 80%;
+    }
+    #search{
+        height:5px;
+        width:50px;
+        padding: 7px;
+    }
+    #fPart,#tPart{
+        height: 350px;
+        width: 100%;
+        margin: 15px auto;
+  
+    }
+    #fDisc>img{
+        margin-left: 15%;
+        width: 80%;
+        margin-top: 20%;
+    }
+    #fDisc>#shopButton{
+        margin-left: 40%;
+    }
+    #sDisc>img{
+        height: 100%;
+    }
+    #shopButton{
+        padding: 7px 20px;
+        margin: auto;
+        margin-top: 20px;
+    }
+    #tDisc{
+            color:black;
+            height: 550px;
+    }
+    #tDisc>img{
+        width: 95%;
+        height: 50%;
+    }
+    #tDisc>p{
+        text-align: left;
+        font-size: 9px ;
+    }
+    #johnHardy{
+        width: 100%;
+        height: auto;
+        margin-left: -10px;
+    }
+    #sText>h1,#h3{
+        font-size: 20px;
+    }
+    #addToWishlist{
+        height: 10px;
+    }
+    #card>h3{
+        font-size: 12px;
+        margin-top: 5px;
+        margin-bottom: -5px;
+    }
+    #priceDiv>#finalPrice{
+        font-size: 10px;
+    }
+    #hoverProducts+#shopButton{
+        margin-top: -50px;
+    }
+    #container+#shopButton{
+        margin-top: -30px;
+    }
+    #download{
+        width: 70%;
+        margin: 5px auto;
+    }
+}

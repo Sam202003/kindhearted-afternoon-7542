@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "Nimbus Sans Extended D";
+  src: url(https://cdn-static.farfetch-contents.com/cdn-content/fonts/NimbusSansExtD-Bold.woff2) format("woff2"), url(https://cdn-static.farfetch-contents.com/cdn-content/fonts/NimbusSansExtD-Bold.woff) format("woff");
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Nimbus Roman D";
+  src: url(https://cdn-static.farfetch-contents.com/cdn-content/fonts/NimbusRomanD-Regular.woff2) format("woff2"), url(https://cdn-static.farfetch-contents.com/cdn-content/fonts/NimbusRomanD-Regular.woff) format("woff");
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Farfetch Basis";
+  src: url(https://cdn-static.farfetch-contents.com/cdn-content/fonts/FarfetchBasis-Regular.woff2) format("woff2"), url(https://cdn-static.farfetch-contents.com/cdn-content/fonts/FarfetchBasis-Regular.woff) format("woff");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Farfetch Basis";
+  src: url(https://cdn-static.farfetch-contents.com/cdn-content/fonts/FarfetchBasis-Bold.woff2) format("woff2"), url(https://cdn-static.farfetch-contents.com/cdn-content/fonts/FarfetchBasis-Bold.woff) format("woff");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+:root {
+  --fontNormal: "Farfetch Basis", "Helvetica Neue", Arial, sans-serif;
+}
+
+body,
+html {
+  font-family: var(--fontNormal);
+}
+
+#allDepartments {
+  width: auto;
+}
+#allDepartments h2 {
+  text-align: center;
+  margin: 10% auto 2% auto;
+}
+
+#departments {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  white-space: nowrap;
+  width: 100%;
+  padding: 0 3%;
+}
+#departments #women, #departments #kids, #departments #men {
+  margin: 0 2%;
+  position: relative;
+}
+#departments #women img, #departments #kids img, #departments #men img {
+  width: 100%;
+}
+#departments #women h2, #departments #kids h2, #departments #men h2 {
+  text-align: center;
+  position: absolute;
+  right: 30%;
+  bottom: 40%;
+  text-decoration: none;
+  color: white;
+}
+#featTrend {
+  display: flex;
+  padding: 0 2%;
+  margin: 10% 0;
+}
+#featTrend .trendSection, #featTrend .featuredSection {
+  width: 100%;
+  margin: 0 2%;
+}
+#featTrend .trendSection h4, #featTrend .featuredSection h4 {
+  margin-bottom: 5%;
+}
+#featTrend .trendSection p, #featTrend .featuredSection p {
+  cursor: pointer;
+}
+#featTrend .accordion-item {
+  border: none;
+  border-bottom: 1px solid rgb(227, 225, 225);
+}
+#featTrend .accordion-item .accordion-button:focus {
+  outline: none;
+  box-shadow: none;
+  background-color: white;
+}
+
+.navbar-toggler {
+  border: 1px solid red;
+  border: none;
+  padding: 0;
+}
+.navbar-toggler:focus {
+  background-color: white;
+  outline: none;
+  box-shadow: none;
+}
+
+@media all and (max-width: 1000px) {
+  #allDepartments h2 {
+    margin: 25% auto 5% auto;
+  }
+
+  #departments {
+    width: 100%;
+    overflow-x: scroll;
+  }
+
+  #featTrend {
+    display: block;
+  }
+  #featTrend .trendSection, #featTrend .featuredSection {
+    margin: 10% 0;
+  }
+}/*# sourceMappingURL=homepage.css.map */

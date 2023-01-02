@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <div id="fonts"></div>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teen</title>
+   
+    <link rel="stylesheet" href="optionsStyle.css">
+    <link rel="shortcut icon" href="../../icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../styles/index.css">
+    <link rel="stylesheet" href="../../components/navbar.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <!-- <div id="saleLine">
+        <a href="/">Sale</a>
+        <a href="/">Up to 50% off</a>
+        <a href="/">Shop the world's best designers</a>
+        </div> -->
+        <div id="nav"></div>
+    <div id="header" style="position : sticky; top : 0px;">
+    </div>
+    
+    <h2 style="text-align: center;font-size: 20px;">Kids Home > Teen</h2>
+
+    <div id="sortFilter">
+
+        <select id="filter">
+        </select>
+
+        <select id="sort">
+        </select>
+    </div>
+
+    <div id="container"></div>
+    <div id="container-guide"></div>
+    <div id="app"></div>
+    <div id="about-section">
+</body>
+</html>
+
+<script type="module">
+    import { header,fonts } from '../components/header.js'
+    import { append } from '../components/append.js'
+    import { sortJS , sortHTML , filterHTML } from '../components/sort.js'
+
+    import {guideSection,appContainer,aboutContainer} from "../../components/BottomSection.js";
+import {navbar,navbarjs} from "../../../components/navbar.js";
+
+let nav=document.getElementById("nav").innerHTML=navbar();
+let guideContainer=document.getElementById("container-guide").innerHTML=guideSection();
+let app=document.getElementById("app").innerHTML=appContainer();
+let aboutSection=document.getElementById("about-section").innerHTML=aboutContainer();
+navbarjs();
+
+let head = document.getElementById('header')
+head.innerHTML = header();
+let font = document.getElementById('fonts')
+font.innerHTML = fonts();
+
+let products = JSON.parse(localStorage.getItem('kidsProducts'))
+
+
+products =  products.filter((el)=>{
+    if(el.type == "Teen"){
+        return el
+    }
+})
+console.log(products)
+
+let container = document.getElementById('container')
+append(products,container)
+
+let sort  = document.getElementById('sort')
+sort.innerHTML = sortHTML()
+sortJS(products,append)
+
+let filter = document.getElementById('filter')
+console.log(filterHTML)
+filter.innerHTML = filterHTML()
+filter.addEventListener('change',function(){
+    window.location.href = `../navOptions/${filter.value}.html`
+})
+
+</script>
+
+<!-- 
+brand: "Dolce & Gabbana"
+category: "button-up denim jacket"
+desc: "Do you know that jacket you can always rely on? Constructed from dark-blue cotton so you can wear it with anything, this denim jacket will add a casual touch to your outfits. Where will this Dolce & Gabbana piece take you?"
+id: 0
+img1: "https://cdn-images.farfetch-contents.com/16/16/47/96/16164796_32907653_1000.jpg"
+img2: "https://cdn-images.farfetch-contents.com/16/16/47/96/16164796_32905900_1000.jpg"
+price: 753
+type: "newIn" -->

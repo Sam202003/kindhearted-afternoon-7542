@@ -1,0 +1,176 @@
+@font-face {
+  font-family: "Nimbus Sans Extended D";
+  src: url(https://cdn-static.farfetch-contents.com/cdn-content/fonts/NimbusSansExtD-Bold.woff2)
+      format("woff2"),
+    url(https://cdn-static.farfetch-contents.com/cdn-content/fonts/NimbusSansExtD-Bold.woff)
+      format("woff");
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Nimbus Roman D";
+  src: url(https://cdn-static.farfetch-contents.com/cdn-content/fonts/NimbusRomanD-Regular.woff2)
+      format("woff2"),
+    url(https://cdn-static.farfetch-contents.com/cdn-content/fonts/NimbusRomanD-Regular.woff)
+      format("woff");
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Farfetch Basis";
+  src: url(https://cdn-static.farfetch-contents.com/cdn-content/fonts/FarfetchBasis-Regular.woff2)
+      format("woff2"),
+    url(https://cdn-static.farfetch-contents.com/cdn-content/fonts/FarfetchBasis-Regular.woff)
+      format("woff");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Farfetch Basis";
+  src: url(https://cdn-static.farfetch-contents.com/cdn-content/fonts/FarfetchBasis-Bold.woff2)
+      format("woff2"),
+    url(https://cdn-static.farfetch-contents.com/cdn-content/fonts/FarfetchBasis-Bold.woff)
+      format("woff");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+:root {
+  --fontNormal: "Farfetch Basis", "Helvetica Neue", Arial, sans-serif;
+}
+body,
+html {
+  font-family: var(--fontNormal);
+}
+#container-guide {
+  display: flex;
+  margin: 2% 3%;
+  justify-content: space-between;
+}
+.box {
+  i {
+    font-size: 24px;
+  }
+  width: 75%;
+  img {
+    width: 7%;
+  }
+  border: 1px solid rgba(100, 100, 100, 0.06);
+  transition: 0.2s;
+  &:hover {
+    background-color: rgb(248, 248, 248);
+  }
+}
+
+#app {
+  margin-top: 8%;
+  margin: 8% auto 0 auto;
+  width: 54%;
+  p:nth-child(2),
+  p:nth-child(4) {
+    font-weight: 400;
+  }
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+  a:hover {
+    color: rgb(73, 72, 72);
+  }
+  input:nth-child(1) {
+    width: 70%;
+    display: inline-block;
+    border-radius: 10px;
+    border: 1px solid #777;
+    padding: 3%;
+  }
+  #btn {
+    border-radius: 10px;
+    color: white;
+    padding: 10px 15px;
+    display: inline;
+    background-color: black;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  .email-input {
+    width: 100%;
+  }
+  .divider {
+    height: auto;
+    width: 1px;
+    margin: 0 5%;
+    background-color: rgba(172, 172, 172, 0.317);
+  }
+  .QR {
+    img {
+      width: 55%;
+    }
+    text-align: left;
+    width: 60%;
+  }
+}
+
+#about-section {
+  background-color: #1d1b1b;
+  color: white;
+  margin-top: 3%;
+  #top-sections {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    p {
+      cursor: pointer;
+      line-height: 15px;
+    }
+    .heading {
+      margin: 0 0 5vh 0;
+    }
+  }
+  .icons {
+    display: flex;
+    img {
+      margin-right: 3vh;
+      cursor: pointer;
+    }
+  }
+  #bottom-section {
+    padding: 10px;
+    p {
+      margin: 0px;
+      font-size: 14px;
+    }
+  }
+}
+@media all and (max-width: 768px) {
+  .app-section > a > img {
+    width: 90%;
+  }
+}
+@media all and (max-width: 1000px) {
+  #container-guide {
+    display: block;
+  }
+  .box {
+    margin: 3%;
+    width: 100%;
+  }
+  #app {
+    width: 70%;
+    input:nth-child(1) {
+      width: 60%;
+    }
+  }
+  .sub-section {
+    padding: 1vh;
+    div {
+      margin: 5vh 0;
+    }
+  }
+  #social-icons > img {
+    margin: 0 2% 2%;
+  }
+}
