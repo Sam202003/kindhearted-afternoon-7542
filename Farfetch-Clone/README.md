@@ -1,9 +1,9 @@
-# Unit 3  Project
+# Unit 2  Project
 
 
 ## Farfetch.com - Website Clone
 
-This is an e-commerce website clone that we made during the construct week at Masai School. It was completed within 5 days. We created a good responsive UI. So, you can use this website through phone and tablet also.
+This is an e-commerce website clone that is made during construct week. It was completed within 5 days.Created a good responsive UI. So, you can use this website through phone and tablet also.
 
 ## Deployment
 
