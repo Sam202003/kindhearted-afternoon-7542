@@ -9,21 +9,6 @@ This is an e-commerce website clone that we made during the construct week at Ma
 
 This project is deployed on netlify here - [Farfetch Clone](https://peaceful-stroopwafel-aba1de.netlify.app/)
 
-## Authors
-
-- [@Jaimin Sheladiya](https://github.com/JaiminSheladiya) [ Student Code - fw18_0783 ]
-
-
-## Contributors
-
-- [@Sumit-Gangwar](https://github.com/Sumit-Gangwar) [ Student Code - fw18_0057 ]
-- [@heyabrar](https://github.com/heyabrar) [ Student Code - fp03_072 ]
-- [@Vishall001](https://github.com/Vishall001) [ Student Code - fw18_0134 ]
-- [@JaiminSheladiya](https://github.com/JaiminSheladiya) [ Student Code - fw18_0783 ]
-- [@prashantshetti07](https://github.com/prashantshetti07) [ Student Code - fw18_0678 ]
-- [@gitskr26hub](https://github.com/gitskr26hub) [ Student Code - fw18_0406 ]
-- [@heynaveed](https://github.com/heynaveed) [ Student Code - fp03_063 ]
-
 # Description -
 
 The e-commerce website has the following pages and the order of flow is also the same.
@@ -151,54 +136,5 @@ You will be redirected to the sneakers page.
 
 3. There is also button named as 'Track order' and 'homepage'. By clicking on homepage you will be redirected to the homepage.
 
-# Additional comments by contributors -
-
-## [@JaiminSheladiya](https://github.com/JaiminSheladiya) -
-
-- We created this clone as much good as we can. We tried to give all the functionalities into it. And give also responsive looks by media queries.
-
-- I used simple HTML , CSS  and JS to complete my project part.
-
-- I created the men’s page and product page . In there you can find all relative products of men with several categories. I also give their category filter and sorting functionality. You can use according to your need.
-
-- In product page I give as much dynamic data as I can. I give price brand category , images and description dynamic for all the product. 
-
-- On hovering on any of the card of product you will find that product image is change in Realtime. 
-
-- I used array of object and stored into local Storage for using the data. Because we can't find any good API for this data.
-
-- Thanks to all teammates for do their work properly and make a good clone.
-
-
-## [@Sumit-Gangwar](https://github.com/Sumit-Gangwar) - 
-
-- All pages have same Navbar for that  I've used import/export and the website is fully responsive. 
-- Navbar and footer section are different for both PC and mobile devices. 
-
-- Wishlist Page is also responsive, products arranged according to the width of device.
-
-- I've used some popular tech stack HTML, CSS, JavaScript and for CSS structuring I've used SCSS and Bootstrap to build this website.
-
-## - [@Vishall001](https://github.com/Vishall001) - 
-
-- In Cart I have used some basic tools like HTML CSS and JavaScript and with the help of HTML and CSS,I have given good UI to the page and with JavaScript.
-
-- I have provided some functionalities like you can increase the quantity and provide also a cross icon to delete any product & depending on items you can see prices. And also provide a Checkout button.
-- In Checkout I have provide a form where you need to fill basic information like name , address , phone-number , pin code after you need to click on proceed to payment button.
-
-- In payment you need to choose the payment method and fill the information accordingly and then click on make payment button. And your order has been placed.
-
-## [@gitskr26hub](https://github.com/gitskr26hub) - 
-
-
-- Women's page has one main page and has a navbar where every important section is provided. The main page has some trending items, discount items and etc. And in navbar.
-
-- there are sections like sales, clothing, shoes, bags etc. When you click on a particular section you will redirect to that page.
-
--  Every women page has two filter options that you can filter by categories or by price (low to high ,high etc).
-
-- And there is one more function that when you put your cursor
-on the particular item, then it shows another picture of that product which is helpful for the visitor.
-- I have used JavaScript for functionality, HTML, and CSS to build women part in this website.
 
 
